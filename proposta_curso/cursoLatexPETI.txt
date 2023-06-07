@@ -1,0 +1,47 @@
+Minicurso: Edição de Textos Matemáticos usando Latex
+
+Tópicos do minicurso
+
+Instalação do Latex (Linux, Windows e MacBook)
+Editores Latex: TexWorks, TexStudio, Overleaf
+
+
+Tópicos Básicos:
+Estrutura básica de um texto latex
+Preâmbulo
+Pacotes e instalação de pacotes
+Ambientes
+Área do Texto
+
+
+Tópicos Específicos Texto:
+Acentuação
+Símbolos Matemáticos
+Fonte e tamanho da fonte
+Seções e subseções
+Espaçamentos e alinhamentos
+Destaque de texto (negrito, sublinhado, ...)
+Ambientes de Equação
+Alinhamento de equações
+Ajuste de Margens (Pacote Geometry)
+cabeçalho e rodapé
+Ambientes de Teorema
+Definição de novos comandos e operadores
+Manipulação de Figuras e Tabelas
+Diagrama de funções
+
+
+Referência cruzada
+Construção de Sumário
+Construção de Índice Remissivo
+Construção de Lista de Figuras
+Construção de Lista de Tabelas
+
+Construção de Bibliografias
+
+Tipos de Documentos:
+
+Artigo (Mostrar alguns formatos diferentes formatos)
+Apresentação (Beamer)
+Pôster
+Monografia
