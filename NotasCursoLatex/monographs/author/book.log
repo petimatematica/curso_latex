@@ -1,0 +1,1041 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.2)  7 JUN 2023 22:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./book.tex
+(book.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-10-26> (svmono.cls
+Document Class: svmono 2021/09/08 v5.10 
+Springer Verlag global LaTeX document class for monographs
+Class Springer-SVMono Info: extra/valid Springer sub-package 
+(Springer-SVMono)           not found in option list - using "global" style.
+(D:\PROGRAMFILES\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(D:\PROGRAMFILES\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+\svparindent=\dimen139
+\betweenumberspace=\dimen140
+\headlineindent=\dimen141
+\c@chapter=\count193
+\mottowidth=\dimen142
+\svitemindent=\dimen143
+\verbatimindent=\dimen144
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 839.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 840.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 841.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 842.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 843.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 844.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 845.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 846.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 847.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 848.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 849.
+\tocchpnum=\dimen145
+\tocsecnum=\dimen146
+\tocsectotal=\dimen147
+\tocsubsecnum=\dimen148
+\tocsubsectotal=\dimen149
+\tocsubsubsecnum=\dimen150
+\tocsubsubsectotal=\dimen151
+\tocparanum=\dimen152
+\tocparatotal=\dimen153
+\tocsubparanum=\dimen154
+\foot@parindent=\dimen155
+\spthmsep=\dimen156
+\c@theorem=\count194
+\c@case=\count195
+\c@conjecture=\count196
+\c@corollary=\count197
+\c@definition=\count198
+\c@example=\count199
+\c@exercise=\count266
+\c@lemma=\count267
+\c@note=\count268
+\c@problem=\count269
+\c@property=\count270
+\c@proposition=\count271
+\c@question=\count272
+\c@solution=\count273
+\c@remark=\count274
+\c@prob=\count275
+\instindent=\dimen157
+\figgap=\dimen158
+\bildb@x=\box51
+\figcapgap=\dimen159
+\tabcapgap=\dimen160
+\c@merk=\count276
+LaTeX Info: Redefining \abstract on input line 1902.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+\stockwidth=\dimen161
+\stockheight=\dimen162
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/xcolor\x11nam.def
+File: x11nam.def 2022/06/12 v2.14 Predefined colors according to Unix/X11 (UK)
+))
+(D:\PROGRAMFILES\MiKTeX\tex/latex/ntheorem\ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+(D:\PROGRAMFILES\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\theorem@style=\toks16
+\theorem@@style=\toks17
+\theorembodyfont=\toks18
+\theoremnumbering=\toks19
+\theorempreskipamount=\skip49
+\theorempostskipamount=\skip50
+\theoremframepreskipamount=\skip51
+\theoremframepostskipamount=\skip52
+\theoreminframepreskipamount=\skip53
+\theoreminframepostskipamount=\skip54
+\theorem@preskip=\toks20
+\theorem@postskip=\toks21
+\theorem@framepreskip=\toks22
+\theorem@framepostskip=\toks23
+\theorem@inframepreskip=\toks24
+\theorem@inframepostskip=\toks25
+\theoremindent=\dimen163
+\theorem@indent=\dimen164
+\theoremrightindent=\dimen165
+\theorem@rightindent=\dimen166
+\theoremheaderfont=\toks26
+\theoremseparator=\toks27
+\theoremprework=\toks28
+\theorempostwork=\toks29
+\theoremsymbol=\toks30
+\qedsymbol=\toks31
+\theoremkeyword=\toks32
+\qedsymbol=\toks33
+\thm@topsep=\skip55
+\thm@topsepadd=\skip56
+Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
+\c@endNonectr=\count277
+\c@currNonectr=\count278
+\mysavskip=\skip57
+Package ntheorem Info: Option `thref' loaded on input line 1175.
+\mysavskip=\skip58
+)
+\c@currproofctr=\count279
+\c@endproofctr=\count280
+\c@proof=\count281
+\minitoc=\write3
+\c@minitocdepth=\count282
+\c@@inst=\count283
+\c@@auth=\count284
+\c@auco=\count285
+\instindent=\dimen167
+\authrun=\box52
+\authorrunning=\toks34
+\tocauthor=\toks35
+\titrun=\box53
+\titlerunning=\toks36
+\toctitle=\toks37
+\c@contribution=\count286
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip59
+\fb@frw=\dimen168
+\fb@frh=\dimen169
+\FrameRule=\dimen170
+\FrameSep=\dimen171
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/type1cm\type1cm.sty
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks38
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count287
+\mult@box=\box54
+\multicol@leftmargin=\dimen174
+\c@unbalance=\count288
+\c@collectmore=\count289
+\doublecol@number=\count290
+\multicoltolerance=\count291
+\multicolpretolerance=\count292
+\full@width=\dimen175
+\page@free=\dimen176
+\premulticols=\dimen177
+\postmulticols=\dimen178
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box55
+\last@line=\box56
+\maxbalancingoverflow=\dimen179
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count293
+\c@columnbadness=\count294
+\c@finalcolumnbadness=\count295
+\last@try=\dimen180
+\multicolovershoot=\dimen181
+\multicolundershoot=\dimen182
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count296
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks39
+\footnotemargin=\dimen183
+\@outputbox@depth=\dimen184
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764
+.
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\newtxtext.sty
+Package: newtxtext 2022/02/28 v1.71(Michael Sharpe) latex and unicode latex sup
+port for TeXGyreTermesX
+
+`newtxtext' v1.71, 2022/02/28 Text macros taking advantage of TeXGyre Termes an
+d its extensions (msharpe) (D:\PROGRAMFILES\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (D:\PROGRAMFILES\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(D:\PROGRAMFILES\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(D:\PROGRAMFILES\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks40
+\XKV@tempa@toks=\toks41
+)
+\XKV@depth=\count297
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(D:\PROGRAMFILES\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/xstring\xstring.sty
+(D:\PROGRAMFILES\MiKTeX\tex/generic/xstring\xstring.tex
+\integerpart=\count299
+\decimalpart=\count300
+)
+Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 21.
+LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 21.
+LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 21.
+LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 21.
+
+(D:\PROGRAMFILES\MiKTeX\tex/generic/binhex\binhex.tex)
+\ntx@tmpcnta=\count301
+\ntx@cnt=\count302
+
+ntx@otftextfalse
+(D:\PROGRAMFILES\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+LaTeX Info: Redefining \oldstylenums on input line 657.
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\newtxmath.sty
+Package: newtxmath 2022/01/16 v1.71
+
+`newtxmath' v1.71, 2022/01/16 Math macros based originally on txfonts (msharpe)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip62
+
+For additional information on amsmath, use the `?' option.
+(D:\PROGRAMFILES\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks42
+\ex@=\dimen185
+))
+(D:\PROGRAMFILES\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen186
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count303
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count304
+\leftroot@=\count305
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count306
+\DOTSCASE@=\count307
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box99
+\strutbox@=\box100
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen187
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count308
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count309
+\dotsspace@=\muskip16
+\c@parentequation=\count310
+\dspbrk@lvl=\count311
+\tag@help=\toks43
+\row@=\count312
+\column@=\count313
+\maxfields@=\count314
+\andhelp@=\toks44
+\eqnshift@=\dimen188
+\alignsep@=\dimen189
+\tagshift@=\dimen190
+\tagwidth@=\dimen191
+\totwidth@=\dimen192
+\lineht@=\dimen193
+\@envbody=\toks45
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks46
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(D:\PROGRAMFILES\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(D:\PROGRAMFILES\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/oberdiek\centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
+)
+\tx@cntz=\count315
+
+(D:\PROGRAMFILES\MiKTeX\tex/generic/binhex\binhex.tex)
+\tx@Isdigit=\count316
+\tx@IsAlNum=\count317
+\tx@tA=\toks47
+\tx@tB=\toks48
+\tx@su=\read2
+
+amsthm NOT loaded
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 376.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/minntx/m/n on input line 376.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/minntx/m/n on input line 376.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/minntx/m/n --> OT1/minntx/b/n on input line 377.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 383.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/qhv/m/n on input line 383.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/qhv/m/n on input line 383.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 384.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/minntx/m/it on input line 384.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/minntx/m/it on input line 384.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/ntxtt/m/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/ntxtt/m/n on input line 385.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 387.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/minntx/b/n on input line 387.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/minntx/b/n on input line 387.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/minntx/m/it --> OT1/minntx/b/it on input line 388.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/qhv/m/n --> OT1/qhv/b/n on input line 389.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/ntxtt/m/n --> OT1/ntxtt/b/n on input line 390.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 491.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ntxmi/m/it on input line 491.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ntxmi/m/it on input line 491.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 492.
+\symlettersA=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 547.
+Now handling font encoding LMS ...
+... no UTF-8 mapping file for font encoding LMS
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 568.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> LMS/ntxsy/m/n on input line 568.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> LMS/ntxsy/m/n on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 569.
+\symAMSm=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 594.
+\symsymbolsC=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 615.
+Now handling font encoding LMX ...
+... no UTF-8 mapping file for font encoding LMX
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 628.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 6
+28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 628.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 628
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 628.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 629.
+\symlargesymbolsTXA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 643.
+\tx@sbptoks=\toks49
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 866.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 867.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 868.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 869.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 870.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 871.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 872.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 874.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 878.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 879.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 925.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 950.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 951.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 2020.
+LaTeX Info: Redefining \Bbbk on input line 2810.
+LaTeX Info: Redefining \not on input line 2959.
+)
+\@indexfile=\write4
+\openout4 = `book.idx'.
+
+
+Writing index file book.idx
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
+e 40.
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 40.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count318
+\l__pdf_internal_box=\box101
+) (book.aux
+(dedication.aux) (foreword.aux) (preface.aux) (acknowledgement.aux)
+(acronym.aux) (part.aux) (chapter.aux) (appendix.aux) (glossary.aux)
+(solutions.aux))
+\openout1 = `book.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 40.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
+ 40.
+ (D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\omlntxmi.fd
+File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
+)
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+40.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 40.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
+e 40.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 40.
+
+(D:\PROGRAMFILES\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count319
+\scratchdimen=\dimen194
+\scratchbox=\box102
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen195
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks51
+) (D:\PROGRAMFILES\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(D:\PROGRAMFILES\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(D:\PROGRAMFILES\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(D:\PROGRAMFILES\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(D:\PROGRAMFILES\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(D:\PROGRAMFILES\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(D:\PROGRAMFILES\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@mv@tabular=\count325
+\c@mv@boldtabular=\count326
+LaTeX Info: Command `\dddot' is already robust on input line 40.
+LaTeX Info: Command `\ddddot' is already robust on input line 40.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 18.0pt on input line 45.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 45.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 45.
+ [1
+
+{C:/Users/mbort/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+
+
+]
+\openout2 = `dedication.aux'.
+
+ (dedication.tex
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 10.
+
+[5
+
+
+
+])
+\openout2 = `foreword.aux'.
+
+ (foreword.tex [6
+
+
+
+
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 16.0pt on input line 9.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 16.0pt on input line 9.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
+e 9.
+ (D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\ot1minntx.fd
+File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
+)
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+9.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+9.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+9.
+
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 11.
+
+Overfull \hbox (3.95215pt too wide) in paragraph at lines 11--12
+\OT1/minntx/m/n/10 Use the tem-plate \OT1/ntxtlf/m/it/10 fore-word.tex \OT1/min
+ntx/m/n/10 to-gether with the doc-u-ment class SV-Mono (monograph-
+ []
+
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.5pt on input line 50.
+ [7]
+\openout2 = `preface.aux'.
+
+ (preface.tex [8
+
+
+
+
+
+]) [9]
+\openout2 = `acknowledgement.aux'.
+
+ (acknowledgement.tex [10
+
+
+
+
+
+]) [11] [12
+
+
+
+
+] (book.toc
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `book.toc'.
+
+
+[13]
+\openout2 = `acronym.aux'.
+
+ (acronym.tex [14
+
+
+
+]
+Overfull \hbox (3.22217pt too wide) in paragraph at lines 10--11
+\OT1/minntx/m/n/10 Use the tem-plate \OT1/ntxtlf/m/it/10 acronym.tex \OT1/minnt
+x/m/n/10 to-gether with the doc-u-ment class SV-Mono (monograph-
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
+ 12.
+(D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\ot1ntxtt.fd
+File: ot1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 12.
+) [15] [16
+
+
+
+
+]
+\openout2 = `part.aux'.
+
+ (part.tex
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 18.0pt on input line 10.
+
+[1
+
+
+
+] [2])
+\openout2 = `chapter.aux'.
+
+ (chapter.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.0pt on input line 9.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.0pt on input line 9.
+
+Overfull \hbox (6.62218pt too wide) in paragraph at lines 18--18
+\OT1/minntx/m/n/10 that sum-ma-rizes the con-tent. The ab-stract will ap-pear \
+OT1/ntxtlf/m/it/10 on-line \OT1/minntx/m/n/10 at www.SpringerLink.com
+ []
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 20.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 31.
+[3
+
+
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input li
+ne 43.
+ (D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\ot1ntxsups.fd
+File: ot1ntxsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 43.
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 8.5pt on input line 43.
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 8.5pt on input line 43.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.5pt on input line 43.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
+(Font)              scaled to size 8.5pt on input line 43.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 11.0pt on input line 56.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 11.0pt on input line 56.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 8.5pt on input line 66.
+Package epstopdf Info: Source file: <figure.eps>
+(epstopdf)                    date: 2023-06-07 22:16:10
+(epstopdf)                    size: 62739 bytes
+(epstopdf)             Output file: <figure-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-06-07 22:27:52
+(epstopdf)                    size: 13944 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure-eps-converted
+-to.pdf figure.eps>
+(epstopdf)             \includegraphics on input line 82.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: miktex-pdftex.exe (file ./figure-eps-converted-to.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figure-eps-converted-to.pdf, id=59, 139.52126pt x 195.73125pt>
+File: figure-eps-converted-to.pdf Graphic file (type pdf)
+<use figure-eps-converted-to.pdf>
+Package pdftex.def Info: figure-eps-converted-to.pdf  used on input line 82.
+(pdftex.def)             Requested size: 90.68773pt x 127.22379pt.
+[4]
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 111.
+ (D:\PROGRAMFILES\MiKTeX\tex/latex/newtx\ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 111.
+ [5 <./figure-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figure.eps>
+(epstopdf)                    date: 2023-06-07 22:16:10
+(epstopdf)                    size: 62739 bytes
+(epstopdf)             Output file: <figure-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-06-07 22:27:52
+(epstopdf)                    size: 13944 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure-eps-converted
+-to.pdf figure.eps>
+(epstopdf)             \includegraphics on input line 129.
+Package epstopdf Info: Output file is already uptodate.
+File: figure-eps-converted-to.pdf Graphic file (type pdf)
+<use figure-eps-converted-to.pdf>
+Package pdftex.def Info: figure-eps-converted-to.pdf  used on input line 129.
+(pdftex.def)             Requested size: 90.68773pt x 127.22379pt.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
+(Font)              scaled to size 10.0pt on input line 135.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 148.
+
+Overfull \hbox (0.61853pt too wide) in paragraph at lines 148--159
+[][]
+ []
+
+[6] [7]
+Overfull \hbox (3.0pt too wide) detected at line 234
+ [] 
+ []
+
+LaTeX Font Info:    Font shape `TS1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 241.
+LaTeX Font Info:    Trying to load font information for OT1+qhv on input line 2
+41.
+(D:\PROGRAMFILES\MiKTeX\tex/latex/tex-gyre\ot1qhv.fd
+File: ot1qhv.fd 2009/09/25 v1.2 font definition file for OT1/qhv
+)
+LaTeX Font Info:    Font shape `OT1/qhv/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 241.
+LaTeX Font Info:    Font shape `OT1/qhv/b/n' will be
+(Font)              scaled to size 9.40002pt on input line 241.
+
+Overfull \hbox (3.0pt too wide) detected at line 241
+ [] 
+ []
+
+
+Overfull \hbox (3.0pt too wide) detected at line 249
+ [] 
+ []
+
+[8]
+Overfull \hbox (3.0pt too wide) detected at line 257
+ [] 
+ []
+
+
+Overfull \hbox (3.0pt too wide) detected at line 264
+ [] 
+ []
+
+
+Overfull \hbox (3.0pt too wide) detected at line 276
+ [] 
+ []
+
+
+Overfull \hbox (3.0pt too wide) detected at line 284
+ [] 
+ []
+
+[9
+
+]
+Overfull \hbox (3.0pt too wide) detected at line 291
+ [] 
+ []
+
+
+Overfull \hbox (3.0pt too wide) detected at line 302
+ [] 
+ []
+
+(references.tex [10
+
+] [11])) [12]
+\openout2 = `appendix.aux'.
+
+ (appendix.tex
+Appendix A.
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 11.
+Package epstopdf Info: Source file: <figure.eps>
+(epstopdf)                    date: 2023-06-07 22:16:10
+(epstopdf)                    size: 62739 bytes
+(epstopdf)             Output file: <figure-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-06-07 22:27:52
+(epstopdf)                    size: 13944 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure-eps-converted
+-to.pdf figure.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+File: figure-eps-converted-to.pdf Graphic file (type pdf)
+<use figure-eps-converted-to.pdf>
+Package pdftex.def Info: figure-eps-converted-to.pdf  used on input line 58.
+(pdftex.def)             Requested size: 90.68773pt x 127.22379pt.
+[13
+
+
+
+
+
+]
+Overfull \hbox (0.61853pt too wide) in paragraph at lines 70--81
+[][]
+ []
+
+) [14]
+\openout2 = `glossary.aux'.
+
+ (glossary.tex) [15
+
+
+
+
+
+
+
+]
+\openout2 = `solutions.aux'.
+
+ (solutions.tex [16
+
+
+
+
+
+]) [17]
+No file book.ind.
+\tf@thm=\write6
+\openout6 = `book.thm'.
+
+(book.aux (dedication.aux) (foreword.aux) (preface.aux) (acknowledgement.aux)
+(acronym.aux) (part.aux) (chapter.aux) (appendix.aux) (glossary.aux)
+(solutions.aux)) ) 
+Here is how much of TeX's memory you used:
+ 9326 strings out of 475380
+ 139681 string characters out of 2787090
+ 491875 words of memory out of 3000000
+ 30410 multiletter control sequences out of 15000+600000
+ 561028 words of font info for 197 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,12n,76p,719b,341s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{D:/PROGRAMFILES/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}{D:
+/PROGRAMFILES/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}{D:/PROGRAMFILES/MiKTeX
+/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{D:/PROGRAMFILES/MiKTeX/fonts/enc/dvips/
+newtx/ntxsups_ot1.enc}<D:/PROGRAMFILES/MiKTeX/fonts/type1/public/newtx/NewTXMI.
+pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/newtx/NewTXMI5.pfb><D:/PROGRAMFI
+LES/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><D:/PROGRAMFILES/MiKTeX/fonts/
+type1/public/newtx/ntxsups-Regular.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/publ
+ic/tex-gyre/qhvb.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/tex-gyre/qtmb.p
+fb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/PROGRAMFILE
+S/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1
+/public/newtx/txmiaX.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/txfonts/txs
+ya.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/newtx/txsys.pfb><D:/PROGRAMFI
+LES/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><D:/PROGRAMFILES/MiKTeX/fonts/ty
+pe1/public/newtx/ztmb.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/newtx/ztmb
+i.pfb><D:/PROGRAMFILES/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><D:/PROGRAMFILE
+S/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on book.pdf (31 pages, 266128 bytes).
+PDF statistics:
+ 189 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
