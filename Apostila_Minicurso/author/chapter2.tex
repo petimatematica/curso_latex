@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Formatação de texto}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+Em todo texto é necessário elementos para format\'a-lo de acordo com as necessidades de cada escritor. Assim,
+neste capítulo, apresentaremos os tópicos básicos para formatação de qualquer texto em \LaTeX{}.
+
+\section{Tamanho e estilo de fonte}
+\label{sec:1}
+Um dos aspectos mais importantes quando se está formatando um texto é o tamanho da fonte. Abaixo, iremos mostrar as principais formas de fazer essas alterações em um texto utilizando o \LaTeX{}.\\
+
+\begin{center}
+	\begin{tabular}{l11}
+		\hline
+	\textbf{Comando}	&  \textbf{Resultado}\\
+		\hline
+	\verb|\tiny{Exemplo}| &  \tiny Exemplo\\ 
+		\hline
+	\verb|\scriptsize{Exemplo}|	& \scriptsize Exemplo \\
+		\hline
+	\verb|\footnotesize{Exemplo}|	&  \footnotesize Exemplo\\
+		\hline
+	\verb|\small{Exemplo}|	& \small Exemplo \\
+		\hline
+	\verb|\normalsize{Exemplo}|	& \normalsize Exemplo \\
+		\hline
+	\verb|\large{Exemplo}|	& \large Exemplo \\
+		\hline
+	\verb|\Large{Exemplo}|	& \Large Exemplo \\
+		\hline
+	\verb|\LARGE{Exemplo}|	& \LARGE Exemplo \\
+		\hline
+	\verb|\huge{Exemplo}|	& \huge Exemplo \\
+		\hline
+	\verb|\Huge{Exemplo}|	& \Huge Exemplo \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\noindent Para deixar o texto em negrito é necessário usar o comando \verb|\textbf|. Veja o exemplo:
+\begin{trailer}{Texto em negrito}
+
+\begin{verbatim}\begin{document}
+    \textbf{Exemplo}
+\end{documument}\end{verbatim}
+\end{trailer}
+
+\noindent Para deixar o texto em itálico é necessário usar o comando \verb|\textit|. Veja o exemplo:
+\begin{trailer}{Texto em itálico}
+\begin{verbatim}\begin{document}
+    \textit{Exemplo}
+\end{document}\end{verbatim}
+\end{trailer}
+
+\noindent Para deixar o texto sublinhado é necessário usar o comando \verb|\underline|. Veja o exemplo:
+\begin{trailer}{Texto sublinhado}
+\begin{verbatim}\begin{document}
+    \underline{Exemplo}
+\end{document}\end{verbatim}
+\end{trailer}
+
+\noindent Para deixar o texto com alguma cor diferente é necessário que no preâmbulo esteja o pacote \verb|xcolor| e em seguida no texto com o comando \verb|\textcolor{}{}|, sendo o primeiro argumento a cor que deseja e no segundo o texto que deseja colorir. Veja o exemplo a seguir:
+\begin{trailer}{Cor no texto}
+\begin{verbatim}
+\usepackage{xcolor}  
+\begin{document}
+    \textcolor{red}{Texto}
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+%COMO FICARIA 
+%
+\section{Espaçamento entre linhas}
+Para alterar o espaçamento entre linhas é preciso adicionar no preâmbulo do texto o pacote \verb|setspace| e no  corpo do texto adicionar um dos seguintes comandos:
+\begin{itemize}
+    \item \verb|\singlespacing| - Espaçamento simples
+    \item \verb|\onehalfspacing| - Espaçamento de $1,5$
+    \item \verb|\doublespacing| - Espaçamento duplo
+\end{itemize}
+
+\begin{trailer}{Espaçamento entre linhas}
+\begin{verbatim}
+\usepackage{setspace}  
+\begin{document}
+    \singlespacing
+    Copiar texto desejado. \\
+    O texto terá espaçamento simples 
+
+    %Para alterar espaçamento basta adicionar o outro
+
+    \onehalfspacing
+    Copiar texto desejado.\\
+    O texto terá espaçamento de 1,5
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\noindent Se você deseja alterar o espaçamento apenas para um trecho específico de texto (e não para todo o documento), você pode usar os ambientes \verb|singlespace|, \verb|onehalfspace| e \verb|doublespace|. 
+
+\section{Hifenização}
+Em um texto em \LaTeX{} a separação silábica é feita de forma automática, visto que a linguagem já é automatizada para que possa ser feito em qualquer idioma. Basta utilizar no preâmbulo o pacote \verb|\usepackage[portuguese]{babel}|. No entanto, caso se queira fazer a hifenização de forma manual de uma palavra é preciso utilizar o comando \verb|\hyphenation{e-xem-plo}| no preâmbulo. 
+
+
+\section{Ajuste de margens}
+Em um texto em \LaTeX{} é preciso ajustar as margens de acordo com as necessidades de cada escritor. Assim, para configurar as margens é necessário inserir no preâmbulo  o pacote \verb|\usepackage{geometry}|. Veja o exemplo abaixo:
+\begin{trailer}{Ajustando margens}
+\begin{verbatim}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+%Defina a configuração das margens
+
+\begin{document}
+   Inserir texto.
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\section{Alinhamento do texto}
+O alinhamento em um texto é importante, pois distrubui o texto uniformemente entre as margens. Para se ter um alinhamento à esquerda, à direita ou centralizado em um trecho do texto é preciso inserir o texto dentro dos ambientes citados abaixo.
+\begin{trailer}{Alinhamento}
+\begin{verbatim}
+\begin{document}
+    \begin{flushleft}
+    Trecho alinhado à esquerda
+    \end{flushleft}
+
+    \begin{flushright}
+    Trecho alinhado à direita
+    \end{flushright}
+
+    \begin{center}
+    Trecho centralizado
+    \end{center}
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\noindent Para se fazer o alinhamento do texto todo é necessário inserir os seguintes comandos antes do texto:
+
+\begin{trailer}{Alinhamento em todo texto}
+\begin{verbatim}
+\begin{document}
+\raggedleft   %alinhamento à esquerda
+\raggedright  %alinhamento à direita
+\centering    %centralizado
+%Selecione algum desses alinhamentos e inicie a escrita.
+
+Escrever texto
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\noindent Para que o texto seja escrito de forma justificada, é necessário inserir no preâmbulo o pacote \verb|ragged2e| e utilizar o comando \verb|\justifying| antes de iniciar 
+a escrita. Veja o exemplo abaixo:
+
+\begin{trailer}{Alinhamento}
+\begin{verbatim}
+\usepachege{ragged2e}
+\begin{document} \justifying 
+
+Escrever texto que será justificado.
+
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\section{Inserir cabeçalho, rodapé e número de páginas}
+Em diversos textos, é necessário que tenha cabeçalho, rodapé e indica\c c\~ao do número de páginas para uma melhor organização do texto. Na escrita \LaTeX{} essas configurações são feitas de forma simples e rápida.
+
+\subsection{Cabeçalho e rodapé}
+Para inserir cabeçalho e rodapé no texto em \LaTeX{} é necessário inserir no preâmbulo o pacote \verb|fancyhdr| e, em seguida, ainda no preâmbulo, colocar\verb|\pagestyle{fancy}| para que o estilo da página siga a fórmula dada pelo pacote \verb|fancyhdr|. Veja o exemplo
+
+\begin{trailer}{Cabeçalho e rodapé}
+\begin{verbatim}
+\pagestyle{fancy} % Define o estilo de página como "fancy"
+\fancyhf{} % Limpa todos os estilos de cabeçalho e rodapé atuais
+
+% Configuração do cabeçalho
+\fancyhead[L]{Cabeçalho à esquerda}
+\fancyhead[C]{Cabeçalho no centro}
+\fancyhead[R]{Cabeçalho à direita}
+
+% Configuração do rodapé
+\fancyfoot[L]{Rodapé à esquerda}
+\fancyfoot[C]{Rodapé no centro}
+\fancyfoot[R]{Rodapé à direita}
+
+% Linha superior do cabeçalho
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Linha inferior do rodapé
+\renewcommand{\footrulewidth}{0.4pt}
+\end{verbatim}
+\end{trailer}
+
+\noindent Para fazer as configurações para o estilo, podemos usar os comandos \verb|lhead|, \verb|rhead|, \verb|lfoot|, \verb|cfoot| e \verb|rfoot| para que seja possível definir o conteúdo que vai ser inserido no cabeçalho e no rodapé em páginas distintas do texto. Já para inserir em uma página específica, basta usar o comando \verb|pagestyle{fancy}|. Veja o exemplo de como colocar cabeçalho e rodapé:
+
+\begin{trailer}{Exemplo}
+\begin{verbatim}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Cabeçalho à esquerda}
+\fancyhead[C]{Cabeçalho no centro}
+\fancyhead[R]{Cabeçalho à direita}
+\fancyfoot[L]{Rodapé à esquerda}
+\fancyfoot[C]{Rodapé no centro}
+\fancyfoot[R]{Rodapé à direita}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+
+ Seu conteúdo vai aqui.
+
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\subsection{Número de página}
+Para inserir número nas páginas no texto em \LaTeX{}, é preciso inserir no preâmbulo o pacote \verb|fancyhdr|, já visto anteriormente. Em seguida, para exibir os números nas páginas, basta inserir o comando \verb|\thepage|. Veja exemplo:
+\begin{trailer}{Número nas páginas}
+\begin{verbatim}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Cabeçalho à esquerda}
+\fancyhead[C]{Cabeçalho no centro}
+\fancyhead[R]{Cabeçalho à direita}
+\fancyfoot[L]{Rodapé à esquerda}
+\fancyfoot[C]{\thepage} % Insere o número da 
+página no centro do rodapé
+\fancyfoot[R]{Rodapé à direita}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+Seu conteúdo vai aqui.
+
+\end{document}
+
+\end{verbatim}
+\end{trailer}
+
+\noindent Neste exemplo, o comando \verb|\fancyfoot[C]{\thepage}| insere o número da página no centro do rodapé.
+
+

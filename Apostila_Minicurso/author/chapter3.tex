@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{T\'opicos Espec\'ificos}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+Tendo em vista o que foi visto no capítulo anterior, é possível perceber que em um texto em \LaTeX{} a formatação é algo muito importante para que o texto final fique da forma desejada. Neste capítulo, será discutido sobre alguns tópicos específicos necessários para a escrita.
+
+\section{Acentua\c c\~ao}
+\label{sec:2}
+Em \LaTeX, existem duas maneiras de se acentuar as palavras. A primeira forma é manualmente e a segunda é da forma tradicional. Para escrever de forma manual, existe um modelo universal em \LaTeX. Veja o exemplo abaixo:
+\begin{trailer}{Acentuação manual}
+\begin{verbatim}
+\begin{document}
+%Colocar  ~, ç
+Acentua\c c\~ao  
+
+%Colocar ´, `, ^
+S\'ilaba  %aspas simples
+\`a       %o acento grave
+Jud\^o    %o acento circunflexo
+
+\end{document}\end{verbatim}
+\end{trailer}
+ \noindent Já para colocar a acentuação de forma direta pelo teclado basta acrescentar no preâmbulo o pacote \verb|\usepackage[utf8]{inputenc}|. 
+
+\section{Se\c c\~oes e subse\c c\~oes}
+Dentro do ambiente \verb|document|, podemos usar comandos como \verb|section{}| para criar se\c c\~oes no documento e \verb|subsection{}| para criar subse\c c\~oes. As se\c c\~oes ajudam a organizar o conte\'udo em partes distintas, facilitando a leitura e compreens\~ao. Veja o exemplo:
+
+\begin{trailer}{Seção e subseção}
+\begin{verbatim}\begin{document}
+    \section{Nome da seção}
+    Texto
+    
+    \subsection{Nome da subseção}
+    Texto
+\end{document}\end{verbatim}
+\end{trailer}
+\section{Ambientes de equa\c c\~ao}
+Em textos matemáticos é inevitavél a escrita de equações. E uma das vantagens da escrita em \LaTeX{} é o fato das equações ficarem organizadas. No \LaTeX{} podemos utilizar os seguintes ambientes para a escrita matemática: \verb|equation|, \verb|eqnarray|, \verb|array|, \verb|align|, \verb|gather| ou utilizar \verb|$equação$|. Veja um exemplo abaixo:
+
+\begin{trailer}{Ambiente de equação}
+No ambiente \verb|equation| não é necessário usar \verb|$$|, pois já é um ambiente matemático.
+\begin{verbatim}\begin{document}
+% Equação numerada
+    \begin{equation} 
+    x+y=56
+    \end{equation}   
+    
+% Equação não numerada
+    \begin{equation*} 
+    x+y=56
+    \end{equation*}
+\end{document}\end{verbatim}
+\end{trailer}
+
+\begin{trailer}{Resultado}
+\noindent Equação numerada
+    \begin{equation} 
+    x+y=56
+    \end{equation}   
+    
+\noindent Equação não numerada
+    \begin{equation*} 
+    x+y=56
+    \end{equation*} 
+\end{trailer}
+
+\subsection{Alinhamento de equa\c c\~oes}
+\noindent Ao escrever as equações em um texto, às vezes é necessário alinhá-las. No \LaTeX{}, para se alinhar as equações, é preciso utilizar o pacote \verb|\usepackage{amsmath}| e o ambiente \verb|align|.\\
+No ambiente \verb|align| não precisa usar \verb|$$|, pois já é um ambiente matemático. Assim, quando temos duas ou mais equações, podemos alinhá-las da seguinte forma: 
+
+\begin{trailer}{Alinhar equação}
+\begin{verbatim}\begin{document}
+    \begin{align*} 
+    2x + 3y &= 7 
+    3x - 2y &= 4
+    \end{align*}
+
+\end{document}
+\end{verbatim}
+\end{trailer}
+
+\noindent Obteremos o seguinte resultado: 
+\begin{align*}
+    2x + 3y &= 7 \\
+    3x - 2y &= 4
+\end{align*}
+% \begin{trailer}{Outro exemplo}
+% \noindent 
+%     \begin{gather}
+%           x+y=56 
+%     \end{gather} 
+ 
+% \end{trailer}
+
+\noindent Para especificar onde será o alinhamento na próxima linha se utiliza \verb|&| antes da parte que deseja alinhar
+
+\section{Defini\c c\~ao de novos comandos}
+Na escrita matemática podem aparecer Teoremas, Lemas, Corolários, Proposições, entre outros. No \LaTeX{}, é possível definir esses ambientes no preâmbulo e inseri-los ao longo do texto de acordo com a necessidade. Veja o exemplo abaixo:
+
+\begin{trailer}{Novos comandos}
+
+\begin{verbatim}
+\newtheorem{definition}{Defini\c c\~ao}[section]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{cor}{Corol\'ario}[section]
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{prop}{Proposi\c c\~ao}[section]
+\newtheorem{Ex}{Exemplo}[section]
+\newtheorem{Remark}{Observa\c c\~ao}[section]
+
+\begin{document}
+    \begin{theorem}
+    Enunciado do teorema 
+    \end{theorem}
+    
+% Para os outros comandos se faz da mesma forma
+
+\end{document}\end{verbatim}
+\end{trailer}
+
+\begin{trailer}{Resultado}
+   \begin{teorema}
+  Enunciado do teorema
+   \end{teorema}
+\end{trailer}
+
+\eject
+\enlargethispage{24pt}
+
+
+
