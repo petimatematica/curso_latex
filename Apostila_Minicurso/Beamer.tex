@@ -1,0 +1,325 @@
+\documentclass{beamer}
+\usetheme{Berlin} 
+\setbeamertemplate{footline}{
+    \hfill\insertframenumber/\inserttotalframenumber\hspace*{1em}}
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\author{Emanuel Mendes Queiroz}
+\title{Apresenta\c c\~oes no LaTeX utilizando Beamer}
+\institute{UESB}
+\date{25/04/2023}
+\usepackage{verbatim}
+\usepackage{listings}
+
+\AtBeginSection[]{
+  \begin{frame}
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+      \usebeamerfont{title}\insertsectionhead\par%
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}}
+
+\begin{document}
+
+
+\begin{frame}
+    \titlepage
+    \vspace{-0.5cm}
+    \begin{figure}
+        \hspace{-3.1cm}\includegraphics[scale=0.3]{Figuras/uesb.png}
+    \end{figure}
+    \begin{figure}
+    \vspace{-2.8cm}
+    \hspace{4.20cm}\includegraphics[scale=0.21]{Figuras/Logo.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\section{Introdu\c c\~ao ao Beamer}
+
+\begin{frame} \justifying
+\begin{block}{O que é Beamer?} \justifying
+    \begin{itemize}
+        \item <1-> Uma classe \LaTeX criada especificamente para fazer apresenta\c c\~oes.
+        \item <2-> Capaz de produzir tanto slides quanto anota\c c\~oes, simultaneamente.
+    \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{block}{Por que usar Beamer em vez de outras ferramentas de apresentação?}
+    \begin{itemize}
+        \item <1-> Consistência tipográfica e qualidade dos símbolos matemáticos.
+        \item <2-> Flexibilidade na criação de slides personalizados.
+        \item <3-> Integração com outros documentos LaTeX.
+        \item <4-> Podem-se escolher temas que melhor se adequem ao propósito de sua apresentação.
+        \item <5-> Os temas são desenvolvidos para serem legíveis e úteis, de forma a facilitar a compreensão da audiência e dar uma aparência mais profissional à apresentação. 
+        \item <6-> Existe controle sobre o layout, cores e fontes, que podem ser alterados para todo o documento, o que permite modificações de última hora sem complicação.
+    \end{itemize}
+\end{block}
+\end{frame}
+
+\section{Estrutura b\'asica}
+
+\begin{frame}[fragile]
+   \begin{block}{Pre\^ambulo}
+        Para utilizar a classe Beamer, assim como é feito com qualquer outra classe do \LaTeX, deve-se declará-la da seguinte forma: \\
+    \vspace{0.5cm}
+    \verb|\documentclass{Beamer}|   
+   \end{block}
+    \pause
+   \begin{block}{P\'agina de t\'itulo}
+       \justifying Os comandos \textit{author}, \textbf{title}, \textbf{institute} e \textbf{date}, são colocados no pre\^ambulo do documento. O comando \textbf{frame} e o comando \textbf{titlepage} são colocados logo ap\'os o in\'cio do documento, o comando \textbf{frame} define a inserção do primeiro quadro e o \textbf{titlepage} define que o quadro será a página de título e vai carregar as informações dadas pelos comandos \textbf{title}, \textbf{author}, \textbf{institute} e \textbf{date}.     
+   \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+   \begin{block}{Divis\~ao da apresenta\c c\~ao}
+    A apresentação pode ser dividida em seções, subseções e \textit{frames}. Os comandos para cada um estão abaixo, respectivamente:
+       
+        \begin{itemize}
+            \item <1-> \verb|\section| - Introduz uma nova se\c c\~ao.
+
+            \item <2-> \verb|\subsection| - Introduz uma nova subse\c c\~ao.
+
+            \item <3-> \verb|\begin{frame}[Título do frame]| e \verb|\end{frame}| - Trata-se do ambiente onde ser\~ao inseridos novos \textit{frames}.
+       \end{itemize}
+       
+    \end{block} 
+\end{frame}
+
+\section{Temas e cores}
+
+\begin{frame}[fragile]
+\begin{block}{Temas}
+    \begin{itemize}
+        \item <1-> Os temas definem cada detalhe da aparência de uma apresentação: cores, fontes, estrutura de apresentação, etc. 
+        
+        \item <2-> Existem cinco tipos de temas que podem ser utilizados  e que são definidos no preâmbulo do documento.
+    \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Temas de apresenta\c c\~ao}
+        
+        \begin{itemize} \justifying
+            \item <1-> Cada tema possui uma estrutura de apresentação e formatação de cores e fontes específica, assim podemos escolher aquele que seja mais adequado à nossa apresentação. 
+            
+            \item <2-> Para definir um tema, use o comando \verb|\usetheme{}|, seguido pelo nome do tema desejado. Por exemplo, para usar o tema \textbf{"Warsaw"}, você adicionaria o seguinte código no preâmbulo do seu documento: \verb|\usetheme{Warsaw}|.
+
+            \item <3-> O Beamer vem com uma variedade de temas pré-definidos. Aqui estão alguns populares: \textbf{Warsaw, Madrid, Frankfurt, Berlin, Copenhagen, Darmstadt, Dresden, JuanLesPins, Malmoe}.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Temas de cores}
+        
+        \begin{itemize} \justifying
+            \item <1-> Os temas de apresentação já vêm com um padrão de cores. Os temas de cores podem ser utilizados para outro esquema de cores diferente do padrão.
+            
+            \item <2-> Para alterar as cores de um tema usa-se o comando: \verb|\usecolortheme{nomedotemadecor}|.
+
+            \item <3-> Os temas de cores mais comuns são: \textbf{albatross, crane, beetle, dove, fly, seagull, wolverine e beaver}.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Temas de cores internas/externas}
+        
+        \begin{itemize} \justifying
+            \item <1-> Temas de cores internas são para elementos dentro dos quadros, especialmente os blocos.
+            
+            \item <2-> Para alterar as cores de um tema usa-se o comando: \verb|\usecolortheme{nome do tema de cores internas}|.
+
+            \item <3-> Geralmente, as opções são: \textbf{lily, orchid e rose}.
+
+            \item <4-> Temas de cores externas são para elementos das extremidades dos quadros, como linhas de cabeçalho, rodapé, barra lateral, etc.
+
+            \item <5-> Para alterar as cores de um tema usa-se o comando: \verb|\usecolortheme{nome do tema de cores externas}|.
+
+            \item <6-> Geralmente, as opções são: \textbf{whale, seahorse, dolphin}.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Temas de fontes}
+        
+        \begin{itemize} \justifying
+            \item <1-> Este tema define as fontes que serão usadas na apresentação. O comando para definir o temas defonte:
+            
+            \item <2-> Para alterar as cores de um tema usa-se o comando: \verb|\usefonttheme[opes]{nomedotemadefonte}|.
+
+            \item <3-> Os temas de fontes mais comuns são: \textbf{default, serif, structurebold e structureitalic}. Se nenhum tema for definido, um tema padrão simples será utilizado.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{Estrutura do \textit{frame}}
+
+\begin{frame}[fragile]
+    \begin{block}{Blocos}
+    \begin{itemize}
+        \item <1-> Os blocos podem ser usados para separar um conteúdo desejado de outros, como separar um texto de outro ou de uma figura e possuem ainda um título de apresentação. São inseridos através do ambiente \textit{block}.
+
+    \end{itemize}
+    \pause
+\begin{verbatim}
+ \frame{
+ \begin{block}{título do bloco} 
+ ... 
+ conteúdo do bloco 
+ ... 
+ \end{block} 
+ Texto fora do bloco, ou seja, que foi separado. 
+ }
+ 
+\end{verbatim}       
+    \end{block}    
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{columns} 
+    \column{.40\textwidth}
+    \begin{block}{Colunas} 
+    As colunas t\^em uma função similar a do bloco, mas dividem o texto em colunas, sem um título de apresentação. \`A direita est\'a o comando para dividir um frame em colunas, onde \verb|%%| representa a pocentagem da largura do quadro que a coluna ocupará.     
+    \end{block}
+    \pause
+    
+    \column{.55\textwidth} 
+     \begin{verbatim}
+         \frame{ 
+         \begin{columns} 
+         \column{.%%\textwidth} 
+         Conteúdo da coluna 1 
+         \column{.%%\textwidth} 
+         Conteúdo da coluna 2  
+         \end{columns} }
+     \end{verbatim}
+    \end{columns} 
+\end{frame}
+
+\section{Sobreposi\c c\~oes}
+
+\begin{frame}[fragile]
+    \begin{block}{Como funcionam as sobreposi\c c\~oes}
+       
+        \begin{itemize}
+        \justifying
+            \item  <1-> Um \textit{frame} é composto por camadas, slides, onde um \textit{frame} comum possui somente uma camada.
+
+            \item <2-> As sobreposições (\textit{overlays}) dão um efeito dinâmico aos quadros, dando a impressão de que os elementos da página estão se alternando. Na verdade, as sobreposições definem uma sequência de camadas sobre um mesmo quadro que ao serem passados geram esses efeitos. Elas adicionam e mostram o conteúdo do quadro de acordo com a camada.
+
+            \item  <3-> A forma mais simples de se aplicar um efeito de sobreposição é usando o comando \verb|\pause| antes do conteúdo ao qual se quer gerar o efeito.
+
+            \item <4-> Cada vez que for usado o comando, esse efeito será gerado para o conteúdo posterior à ele.
+        \end{itemize}
+          
+    \end{block}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo de comando com sobreposi\c c\~ao}
+    \begin{verbatim}
+        \frame { 
+        \begin{itemize} 
+        \itemA 
+        
+        \pause 
+        \itemB 
+        
+        \pause 
+        \itemC 
+        \end{itemize} 
+        }
+    \end{verbatim}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{block}{Sobreposi\c \~ao no ambiente \textit{itemize}}
+    \begin{itemize}
+        \item <1-> Tamb\'em \'e poss\'ivel adicionar sobreposi\c c\~ao de camadas no ambiente \textit{itemize} utilizando o comando \verb|<n->| antes do conte\'udo de cada item, onde $n$ \'e o n\'umero do item.
+
+        \item <2-> Exemplo:
+        \begin{verbatim}
+            \frame{
+            \begin{itemize}
+               \item <1-> Item 1
+               \item <2-> Item 2
+               \item <3-> Item 3
+            \end{itemize}
+            }
+        \end{verbatim}
+        
+    \end{itemize}
+\end{block}
+ 
+\end{frame}
+
+\begin{frame}[fragile]
+
+    \begin{block}{Comandos de sobreposição mais utiizados}
+    \begin{itemize}
+        \item <1-> \verb|\onslide<número>{texto}| - O texto aparece somente nas camadas indicadas do quadro. Em outras camadas fica ume spaço vazio reservado à tal texto. 
+        
+        \item <2-> \verb|\visible<número>{text}| - Funciona feito o \textit{onslide}, mas em alguns casos o texto aparece com o efeito \textit{washed out}, ao invés de invisível. 
+        
+        \item <3-> \verb|\invisible<número>{texto}| - Oposto ao visible. 
+        
+        \item  <4-> \verb|\only<número>{texto}| - O texto aparece somente nas camadas indicadas do quadro, mas em outras camadas nenhum espaço fica reservado.
+        
+        \item <5-> \verb|\alt<número>{textoalternativo}{textoprincipal}| - O texto alternativo aparece em camadas indicadas do quadro, nos outros aparece o texto principal.
+    \end{itemize}  
+    \end{block}
+    
+\end{frame}
+
+\section{Transi\c c\~oes}
+
+\begin{frame}[fragile]
+    \begin{block}{Como funcionam as transi\c c\~oes}
+        \begin{itemize}
+            \item <1-> O formato PDF oferece um mecanismo padrão para definirmos transições entre as camadas ou quadros. 
+            
+            \item <2-> Uma transição é composta de um único comando. Este especifica que transição deve ser usada quando o quadro é mostrado. O comando pode ser posicionado em qualquer local, dentro do \textit{frame}.
+
+            \item <3-> Exemplo:
+            \begin{verbatim}
+                \frame{ 
+                \transboxin 
+                Conteúdo do frame 
+                }
+            \end{verbatim}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{block}{Efeitos comumente usados}
+    \vspace{0.3cm}
+        \includegraphics[scale=0.45]{Captura de tela 2023-08-26 144533.png}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \textbf{\LARGE Obrigado!}
+    \end{center}
+\end{frame}
+
+\end{document}
