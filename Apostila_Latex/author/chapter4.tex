@@ -1,0 +1,746 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Matem\'atica e S\'imbolos}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+Neste cap\'{i}tulo, apresentaremos os s\'{i}mbolos e operadores utilizados nas seções seguintes. Equações b\'{a}sicas serão constru\'{i}das e, por fim, exerc\'{i}cios serão propostos ao leitor para que o mesmo possa verificar o seu progresso.
+
+\section{S\'{i}mbolos}
+\label{sec:1}
+Apesar do nome do cap\'{i}tulo ser chamado de "Matem\'{a}tica e S\'{i}mbolos", os s\'{i}mbolos ser\~{a}o apresentados primeiro por raz\~{o}es did\'{a}ticas. Apesar disso, n\~{a}o se espera e nem se recomenda que o leitor memorize todos os comandos. Use esta seç\~{a}o apenas como um material para consulta, pois acreditamos que a memorizaç\~{a}o deve ocorrer em virtude da experi\^{e}ncia de uso do \LaTeX.
+
+\noindent A lista a seguir n\~{a}o \'{e} completa, por isso, acesse o site \verb|https://app.mettzer.com/| \verb|latex|, os ap\^{e}ndices A, B e C de \cite{gratzer2007more}, ou ainda, \cite{downes2002short} para mais informaç\~{o}es. Para ter acesso a todos os s\'imbolos a seguir é necess\'ario usar os pacotes \verb|amsmath|, \verb|amsthm|, \verb|amsfonts| e \verb|amssymb|. 
+
+\subsection{Fonte Mathbb}
+\begin{equation*}
+    \mathbb{A}\mathbb{B}\mathbb{C}\mathbb{D}\mathbb{E}\mathbb{F}\mathbb{G}\mathbb{H}\mathbb{I}\mathbb{J}\mathbb{K}\mathbb{L}\mathbb{M}\mathbb{N}\mathbb{O}\mathbb{P}\mathbb{Q}\mathbb{R}\mathbb{S}\mathbb{T}\mathbb{U}\mathbb{V}\mathbb{W}\mathbb{X}\mathbb{Y}\mathbb{Z}
+\end{equation*}
+
+\subsubsection{Fonte Mathbf}
+\begin{equation*}
+    \mathbf{A}\mathbf{B}\mathbf{C}\mathbf{D}\mathbf{E}\mathbf{F}\mathbf{G}\mathbf{H}\mathbf{I}\mathbf{J}\mathbf{K}\mathbf{L}\mathbf{M}\mathbf{N}\mathbf{O}\mathbf{P}\mathbf{Q}\mathbf{R}\mathbf{S}\mathbf{T}\mathbf{U}\mathbf{V}\mathbf{W}\mathbf{X}\mathbf{Y}\mathbf{Z}
+\end{equation*}
+\begin{equation*}
+    \mathbf{a}\mathbf{b}\mathbf{c}\mathbf{d}\mathbf{e}\mathbf{f}\mathbf{g}\mathbf{h}\mathbf{i}\mathbf{j}\mathbf{k}\mathbf{l}\mathbf{m}\mathbf{n}\mathbf{o}\mathbf{p}\mathbf{q}\mathbf{r}\mathbf{s}\mathbf{t}\mathbf{u}\mathbf{v}\mathbf{w}\mathbf{x}\mathbf{y}\mathbf{z}
+\end{equation*}
+
+\subsection{Letras hebraicas}
+\begin{equation*}
+    \aleph \; \verb|\aleph| \quad \beth \; \verb|\beth| \quad \daleth \; \verb|\daleth| \quad \gimel \; \verb|\gimel|
+\end{equation*}
+
+\newpage
+\subsection{Letras gregas}
+
+\begin{equation*}
+    \begin{matrix}
+        \alpha \; \verb|\alpha     | & \Theta \; \verb|\Theta    | & \varXi \; \verb|\varXi   | & \Upsilon \; \verb|\Upsilon   |\\
+        \beta \; \verb|\beta      | & \vartheta \; \verb|\vartheta | & \pi \; \verb|\pi      | & \varUpsilon \; \verb|\varUpsilon|\\
+        \Gamma \; \verb|\Gamma     | & \varTheta \; \verb|\varTheta | & \Pi \; \verb|\Pi      | & \phi \; \verb|\phi       |\\
+        \varGamma \; \verb|\varGamma  | & \iota \; \verb|\iota     | & \varpi \; \verb|\varpi   | & \Phi \; \verb|\Phi       |\\
+        \digamma \; \verb|\digamma   | & \kappa \; \verb|\kappa    | & \varPi \; \verb|\varPi   | & \varphi \; \verb|\varphi    |\\
+        \delta \; \verb|\delta     | & \varkappa \; \verb|\varkappa | & \rho \; \verb|\rho     | & \varPhi \; \verb|\varPhi    |\\
+        \Delta \; \verb|\Delta     | & \lambda \; \verb|\lambda   | & \varrho \; \verb|\varrho  | & \chi \; \verb|\chi       |\\
+        \varDelta \; \verb|\varDelta  | & \Lambda \; \verb|\Lambda   | & \sigma \; \verb|\sigma   | & \psi \; \verb|\psi       |\\
+        \epsilon \; \verb|\epsilon   | & \varLambda \; \verb|\varLambda| & \Sigma \; \verb|\Sigma   | & \Psi \; \verb|\Psi       |\\
+        \varepsilon \; \verb|\varepsilon| & \mu \; \verb|\mu       | & \varsigma \; \verb|\varsigma| & \varPsi \; \verb|\varPsi    |\\
+        \zeta \; \verb|\zeta      | & \nu \; \verb|\nu       | & \varSigma \; \verb|\varSigma| & \omega \; \verb|\omega     |\\
+        \eta \; \verb|\eta       | & \xi \; \verb|\xi       | & \tau \; \verb|\tau     | & \Omega \; \verb|\Omega     |\\
+        \theta \; \verb|\theta     | & \Xi \; \verb|\Xi       | & \upsilon \; \verb|\upsilon | & \varOmega \; \verb|\varOmega  |\\
+    \end{matrix}
+\end{equation*}
+
+\subsection{S\'{i}mbolos matem\'{a}ticos}
+\begin{equation*}
+    \begin{matrix}
+    \in \; \verb|\in             | & \le \; \verb|\le        | & \sim \; \verb|\sim      | & \equiv \; \verb|\equiv      | \\ 
+    \subseteq \; \verb|\subseteq       | & \perp \; \verb|\perp      | & \ni \; \verb|\ni       | & \ge \; \verb|\ge         | \\ 
+    \cong \; \verb|\cong           | & \supset \; \verb|\supset    | & \supseteq \; \verb      |\supseteq | & \parallel \; \verb|\parallel   | \\ 
+    \therefore \; \verb|\therefore      | & \geqslant \; \verb|\geqslant  | & \because \; \verb|\because  | & \pm\; \verb|\pm         | \\ 
+    \cdot \; \verb|\cdot          | & \circ \; \verb|\circ      | & \bigcirc \; \verb|\bigcirc  | & \div\; \verb|\div        | \\ 
+    \cap \; \verb|\cap            | & \cup \; \verb|\cup       | & \sqcap \; \verb|\sqcap    | & \sqcup \; \verb|\sqcup      | \\ 
+    \vee\; \verb|\vee            | & \oplus \; \verb|\oplus     | & \otimes \; \verb|\otimes   | & \odot \; \verb|\odot       | \\ 
+    \dagger \; \verb|\dagger         | & \setminus\; \verb|\setminus  | & \ne \; \verb|\ne       | & \notin \; \verb|\notin      | \\ 
+    \ngtr \; \verb|\ngtr           | & \nleq\; \verb|\nleq      | & \ngeq\; \verb|\ngeq     | & \nleqslant \; \verb|\nleqslant  | \\ 
+    \nLeftrightarrow \; \verb|\nLeftrightarrow| & \supsetneq \; \verb|\supsetneq | & \Leftarrow\; \verb|\Leftarrow| & \nRightarrow\; \verb|\nRightarrow| \\ 
+    \Leftrightarrow \; \verb|\Leftrightarrow | & \subsetneq \; \verb|\subsetneq | & \partial \; \verb|\partial  | & \infty\; \verb|\infty      | \\ 
+    \Rightarrow\; \verb|\Rightarrow     | & \varnothing \; \verb|\varnothing| & \forall \; \verb|\forall   | & \exists \; \verb|\exists     | \\ 
+    \nLeftarrow\; \verb|\nLeftarrow     | & \nabla\; \verb|\nabla     | & \neg \; \verb|\neg      | & \complement \; \verb|\complement | \\
+    \subset \; \verb|\subset         | & \approx \; \verb|\approx    | & \leqslant \; \verb|\leqslant | & \times \; \verb|\times      |\\
+    \bmod\; \verb|\bmod           | & \wedge\; \verb|\wedge     | & \amalg\; \verb|\amalg    | & \nless \; \verb|\nless      | \\
+    \ngeqslant \; \verb|\ngeqslant      | & \mapsto \; \verb|\mapsto    | & \emptyset \; \verb|\emptyset | & \top\; \verb|\top        | \\
+    \nexists \; \verb|\nexists        | & & & 
+    \end{matrix} 
+\end{equation*}
+
+\subsection{Fonte Mathcal}
+\begin{equation*}
+    \mathcal{A}\mathcal{B}\mathcal{C}\mathcal{D}\mathcal{E}\mathcal{F}\mathcal{G}\mathcal{H}\mathcal{I}\mathcal{J}\mathcal{K}\mathcal{L}\mathcal{M}\mathcal{N}\mathcal{O}\mathcal{P}\mathcal{Q}\mathcal{R}\mathcal{S}\mathcal{T}\mathcal{U}\mathcal{V}\mathcal{W}\mathcal{X}\mathcal{Y}\mathcal{Z}
+\end{equation*}
+
+\subsection{Fonte Mathfrak}
+\begin{equation*}
+    \mathfrak{A}\mathfrak{B}\mathfrak{C}\mathfrak{D}\mathfrak{E}\mathfrak{F}\mathfrak{G}\mathfrak{H}\mathfrak{I}\mathfrak{J}\mathfrak{K}\mathfrak{L}\mathfrak{M}\mathfrak{N}\mathfrak{O}\mathfrak{P}\mathfrak{Q}\mathfrak{R}\mathfrak{S}\mathfrak{T}\mathfrak{U}\mathfrak{V}\mathfrak{W}\mathfrak{X}\mathfrak{Y}\mathfrak{Z}
+\end{equation*}
+\begin{equation*}
+    \mathfrak{a}\mathfrak{b}\mathfrak{c}\mathfrak{d}\mathfrak{e}\mathfrak{f}\mathfrak{g}\mathfrak{h}\mathfrak{i}\mathfrak{j}\mathfrak{k}\mathfrak{l}\mathfrak{m}\mathfrak{n}\mathfrak{o}\mathfrak{p}\mathfrak{q}\mathfrak{r}\mathfrak{s}\mathfrak{t}\mathfrak{u}\mathfrak{v}\mathfrak{w}\mathfrak{x}\mathfrak{y}\mathfrak{z}
+\end{equation*}
+
+\subsection{Delimitadores}
+\begin{equation*}
+    \begin{matrix}
+        \lbrace \; \verb|\lbrace    | & \rbrace \; \verb|\rbrace    | &  \backslash \; \verb|\backslash    | & \langle \; \verb|\langle| \\
+        \rangle \; \verb|\rangle   | & \Vert \; \verb|\Vert    | & \lceil \; \verb|\lceil    | & \rceil \; \verb|\rceil| \\
+        \lfloor \; \verb|\lfloor  | & \rfloor \; \verb|\rfloor| & &
+    \end{matrix}
+\end{equation*}
+
+\subsection{Operadores}
+\begin{equation*}
+    \begin{matrix}
+    \arcsin \; \verb|\arcsin  | & \cos \; \verb|\cos  | & \cosh \; \verb|\cosh  | & \det \; \verb|\det  | & \dim \; \verb|\dim| \\ 
+    \exp \; \verb|\exp  | & \ker \; \verb|\ker  | & \ln \; \verb|\ln  | & \inf \; \verb|\inf  | & \lim \; \verb|\lim| \\ 
+    \liminf \; \verb|\liminf  | & \limsup \; \verb|\limsup  | & \min \; \verb|\min  | & \max \; \verb|\max  | & \sin \; \verb|\sin|
+    \end{matrix} 
+\end{equation*}
+
+\subsection{Operadores grandes}
+\begin{equation*}
+    \begin{matrix}
+    \displaystyle \prod \; \verb|\prod     | & \displaystyle \sum \; \verb|\sum      | & \displaystyle \bigcap \; \verb|\bigcap| & \displaystyle \bigcup \; \verb|\bigcup  | \\ 
+    \\
+    \displaystyle \bigoplus \; \verb|\bigoplus | & \displaystyle \bigotimes \; \verb|\bigotimes| & \displaystyle \int \; \verb|\int   | & \displaystyle \oint \; \verb|\oint    | \\ 
+    \\
+    \displaystyle \iint \; \verb|\iint     | & \displaystyle \iiint \; \verb|\iiint    | & \displaystyle \iiiint \; \verb|\iiiint| & \displaystyle \idotsint \; \verb|\idotsint| \\
+    \\
+    \displaystyle \coprod \; \verb|\coprod   | & \displaystyle \bigwedge \; \verb|\bigwedge | & \displaystyle \bigvee \; \verb|\bigvee| & \displaystyle \bigsqcup \; \verb|\bigsqcup|
+    \end{matrix} 
+\end{equation*}
+\subsection{Acentos}
+\begin{equation*}
+    \acute{a} \; \verb|\acute{a}| \quad \bar{a} \; \verb|\bar{a}| \quad \ddot{a} \; \verb|\ddot{a}| \quad \grave{a} \; \verb|\grave{a}|
+\end{equation*}
+\begin{equation*}
+    \hat{a} \; \verb|\hat{a}| \quad \tilde{a} \; \verb|\tilde{a}| \quad \vec{a} \; \verb|\vec{a}|
+\end{equation*}
+
+\subsection{Miscel\^{a}nea}
+\begin{equation*}
+    \hbar \; \verb|\hbar| \quad \ell \; \verb|\ell| \quad \imath \; \verb|\imath| \quad \jmath \; \verb|\jmath| \quad \smallint \; \verb|\smallint| \quad \clubsuit \; \verb|\clubsuit|
+\end{equation*}
+\begin{equation*}
+    \diamondsuit \; \verb|\diamondsuit| \quad \heartsuit \; \verb|\heartsuit| \quad \spadesuit \; \verb|\spadesuit| \quad \pounds \; \verb|\pounds| \quad \mho \; \verb|\mho|
+\end{equation*}
+\begin{equation*}
+    \hslash \; \verb|\hslash| \quad \eth \; \verb|\eth| \quad \measuredangle \; \verb|measuredangle| \quad \sphericalangle \; \verb|\sphericalangle|
+\end{equation*}
+
+\newpage
+
+\section{Construç\~{o}es b\'{a}sicas}
+\subsection{Operaç\~{o}es aritm\'{e}ticas} \label{opArit}
+Começaremos com adiç\~{a}o, subtraç\~{a}o, multiplicaç\~{a}o e divis\~{a}o,
+\begin{equation*}
+    a + b \quad \verb|a+b| \qquad a - b \quad \verb|a-b| \qquad ab \quad \verb|ab| \qquad a/b \quad \verb|a/b|
+\end{equation*}
+
+\noindent h\'{a} outras duas formas de indicar uma multiplicaç\~{a}o um outra de divis\~{a}o:
+
+\begin{equation*}
+    a \cdot b \quad \verb|a \cdot b| \qquad a \times b \quad \verb|a \times b| \qquad a \div b \quad \verb|a \div b|
+\end{equation*}
+
+\noindent fraç\~{o}es podem ser inscritas com o comando \verb|\frac{numerador}{denominador}|,
+
+\begin{equation*}
+    \frac{x+y+z}{x-z+1} \quad \verb|\frac{x+y+z}{x-z+1}|
+\end{equation*}
+
+\noindent Observamos que se este comando for escrito numa linha de texto, ou seja, fora do ambiente \verb|equation|, por exemplo, teremos este resultado $\frac{x+y+z}{x-z+1}$ ao inv\'{e}s deste $\dfrac{x+y+z}{x-z+1}$, de forma geral podemos optar por qual estilo usar, o primeiro resultado \'{e} chamado de \textit{inline-style} e o segundo de \textit{display-style}. No geral, podemos determinar qual estilo usar com os comandos \verb|\tfrac| (\textit{inline-style}) e \verb|\dfrac| (\textit{display-style}). Assim \'{e} poss\'{i}vel obter o resultado abaixo,
+\begin{equation*}
+    \tfrac{5x}{y+1} \quad \verb|\tfrac{5x}{y+1}|
+\end{equation*}
+
+\subsection{Subscrever e sobrescrever em ambientes matem\'{a}ticos}
+
+Para subscrever e sobrescrever usa-se \verb|_| e \verb|^|, respectivamente. A express\~{a}o que se desejar subscrever ou sobrescrever deve estar entre chaves \verb|{}|. Veja os exemplos:
+\begin{equation*}
+    x_{1} \quad \verb|x_{1}| \qquad x^{2} \quad \verb|x^{2}| \qquad x^{a_{1}} \quad \verb|x^{a_{1}}| \qquad x_{i+1} \quad \verb|x_{i+1}|
+\end{equation*}
+\begin{equation*}
+    x^{2}_{i} \quad \verb|x^{2}_{i}| \qquad x_{i}^{2} \quad \verb|x_{i}^{2}| \qquad x_{i_{j}^{2}}^{a^{2}_{i}} \quad \verb|x_{i_{j}^{2}}^{a^{2}_{i}}|
+\end{equation*}
+
+\noindent Cabe salientar que o antepenúltimo e o penúltimo exemplo nos mostram que n\~{a}o \'{e} necess\'{a}rio seguir uma ordem em espec\'{i}fico para a subscriç\~{a}o e a sobrescriç\~{a}o, j\'{a} o último exemplo no diz que \'{e} poss\'{i}vel realizar o processo de sobrescriç\~{a}o em textos j\'{a} subescritos, por exemplo. N\~{a}o obstante, caso o que se deseja subscrever ou sobrescrever tenha apenas um caractere, as chaves podem ser omitidas, apesar disso, tal procedimento \'{e} considerado uma m\'{a} pr\'{a}tica.
+
+\noindent Em certas ocasi\~{o}es, precisamos escrever ${}^\dagger$ ou ${}_1$, para isso basta usar \verb|${}^{\dagger}$| e \verb|${}_{1}$|, respectivamente, ou seja, as chaves com nenhum caractere entre elas servem como uma base para a sobrescriç\~{a}o e subscriç\~{a}o.
+
+\subsection{Coeficientes binomiais}
+Um coeficiente binomial pode ser escrito com o comando \verb|\binom|. Exemplo:
+\begin{equation*}
+    \dbinom{n}{p} = \frac{n!}{p!(n-p)!} \quad \verb|\binom{n}{p}=\frac{n!}{p!(n-p)!}|
+\end{equation*}
+
+\subsection{Retic\^{e}ncias}
+As retic\^{e}ncias podem ser escritas de duas formas $\ldots$ (\textit{low}) e $\cdots$ (\textit{centered}) com os comandos \verb|$\ldots$| e \verb|$\cdots$|, respectivamente. Caso \verb|\dots| seja utilizado o \LaTeX $ $ decidir\'{a} uma das duas formas baseado no caractere que antecede o comando. Por exemplo o comando \verb|$T(x_1,x_2,\dots,x_n)=T(x_1)+T(x_2)+\dots+T(x_n)$| resulta em,
+\begin{equation*}
+    T(x_1,x_2,\dots,x_n)=T(x_1)+T(x_2)+\dots+T(x_n).
+\end{equation*}
+
+\noindent Al\'{e}m disso, temos os comandos \verb|$\vdots$| (retic\^{e}ncias na horizontal) e \verb|$\ddots$| (retic\^{e}ncias na diagonal), daremos um exemplo adiante, quando discutiremos a construç\~{a}o de matrizes.
+
+\subsection{Integrais}
+Podemos escrever uma integral usando o comando \verb|\int|,
+\begin{equation*}
+    \int \cos x\, dx = \sin x + C \qquad \verb|\int \cos x\, dx = \sin x + C|
+\end{equation*}
+para as integrais definidas, basta usar a noç\~{a}o de subscriçao e sobrescriç\~{a}o abordada na seç\~{a}o \ref{opArit}, assim,
+\begin{equation*}
+    \int_{0}^{1} x^2\, dx = \frac{1}{3} \qquad \verb|\int_{0}^{1} x^2\, dx = \frac{1}{3}|
+\end{equation*}
+
+\noindent j\'{a} em relaç\~{a}o \`as integrais impr\'{o}prias, precisamos saber apenas que $\infty$ pode ser escrito com o comando \verb|\infty|,
+\begin{equation*}
+    \int_{-\infty}^{\infty} e^{-x^{2}}\, dx \qquad \verb|\int_{-\infty}^{\infty} e^{-x^{2}}\, dx|
+\end{equation*}
+
+\noindent ademais, \'{e} poss\'{i}vel forçar que o s\'{i}mbolo de integral esteja entre os limites de integraç\~{a}o graças ao comando \verb|\limits| aplicando no exemplo anterior, temos:
+\begin{equation*}
+    \int\limits_{-\infty}^{\infty} e^{-x^{2}}\, dx \qquad \verb|\int\limits_{-\infty}^{\infty} e^{-x^{2}}\, dx|
+\end{equation*}
+
+\noindent aplicando o que acabamos de ver com as variaç\~{o}es do comando \verb|\int| podemos escrever integrais múltiplas, 
+\begin{equation*}
+    \iiiint\limits_{\Omega} f(w,x,y,z)\,dw\,dx\,dy\,dz\
+\end{equation*}
+\begin{verbatim}
+    \iiiint\limits_{\Omega} f(w,x,y,z)\,dw\,dx\,dy\,dz\
+\end{verbatim}
+\begin{equation*}
+    \int^{\sqrt{\pi}}_{0} \int^{x}_{0} \int^{xz}_{0} x^2\sin y\,dy\,dz\,dx\
+\end{equation*}
+
+\begin{programcode}{Integral tripla.}
+\begin{verbatim}
+        \int^{\sqrt{\pi}}_{0} \int^{x}_{0} 
+            \int^{xz}_{0} x^2\sin y\,dy\,dz\,dx\
+\end{verbatim}    
+\end{programcode}
+
+\subsection{Ra\'{i}zes}
+O comando \verb|\sqrt| produz uma ra\'{i}z quadrada, por exemplo, $\sqrt{5}$ \'{e} gerado por \verb|\sqrt{5}| ou ainda,
+\begin{equation*}
+    \sqrt{\frac{x^2}{x^2+1}} \qquad \verb|\sqrt{\frac{x^2}{x^2+1}}|
+\end{equation*}
+para escrevermos uma ra\'{i}z en\'{e}sima basta utilizarmos o seguinte argumento opcional, como em \verb|\sqrt[3]{5}| de modo que obteremos $\sqrt[3]{5}$, al\'{e}m disso, podemos deslocar o radical usando \verb|\leftroot| e \verb|\uproot|,
+\begin{equation*}
+    \sqrt[\leftroot{2} \uproot{2} 3]{5} \qquad \verb|\sqrt[\leftroot{2} \uproot{2} 3]{5}|.
+\end{equation*}
+Vale destacar que utilizando um n\'{u}mero positivo como argumento de \verb|\leftroot| o radicando \'{e} deslocado uma determinada quantidade de espaço para a esquerda, caso seja um n\'{u}mero negativo, este deslocamento ocorre \`{a} direita, a mesma l\'{o}gica se aplica ao comando \verb|\uproot|.
+\subsection{Texto}
+O \LaTeX$ $ permite que se escreva textos em ambientes matem\'{a}ticos, atrav\'{e}s do comando \verb|\text|. Por exemplo:
+\begin{equation*}
+    A\cup B = \{x;\text{ }x\in A \text{ ou } x\in B\}
+\end{equation*}
+\'{e} obtido por \verb|A\cup B = \{x;\text{ }x\in A \text{ ou } x\in B\}|.
+\noindent O pacote \verb|amsfonts| habilita o comando \verb|\mathbb| que acessa uma fonte que tem como caracter\'{i}stica possuir letras com duplo traço que s\~{a}o usadas na matem\'{a}tica para denotar conjuntos num\'{e}ricos, por exemplo,
+\begin{equation*}
+    \mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}
+\end{equation*}
+\begin{verbatim}
+      \mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}
+\end{verbatim}
+
+\noindent h\'{a} ainda outros estilos matem\'{a}ticos de fontes que s\~{a}o acessadas por \verb|\mathcal| e \verb|\mathfrak| e que possuem sintaxe parecida com  o comando \verb|\mathbb|.
+
+\noindent Ademais, existem quatro tamanhos de fontes em ambientes matem\'{a}ticos, a saber:
+
+\begin{equation*}
+    \displaystyle \coprod \; \verb |\displaystyle \coprod| \qquad \textstyle \coprod \; \verb |\textstyle \coprod|
+\end{equation*}
+\begin{equation*}
+    \scriptstyle \coprod \; \verb |\scriptstyle \coprod| \qquad \scriptscriptstyle \coprod \; \verb |\scriptscriptstyle \coprod|
+\end{equation*}
+\noindent dessa forma podemos selecionar um tamanho de fonte independentemente se o que gostar\'{i}amos escrever possui um comando espec\'{i}fico ou n\~{a}o para tal, como vimos com as fraç\~{o}es e os comandos \verb|\tfrac| e \verb|\dfrac|.
+
+\noindent Por fim, apresentaremos alguns comandos de espaçamento,
+\begin{equation*}
+     \begin{array}{l}
+     \spadesuit \thinspace \clubsuit \quad \verb|    \spadesuit \thinspace \clubsuit| \\  
+     \spadesuit \thickspace \clubsuit \quad \verb|    \spadesuit \thickspace \clubsuit| \\ 
+     \spadesuit \quad \clubsuit \quad \verb|   \spadesuit \quad \clubsuit| \\ 
+     \spadesuit \qquad \clubsuit \quad \verb| \spadesuit \qquad \clubsuit|
+     \end{array} 
+\end{equation*}
+
+\subsection{Delimitadores}
+Observe o seguinte exemplo, 
+\begin{equation*}
+    f(x) = (\frac{1}{2})^x \qquad \verb|f(x) = (\frac{1}{2})^x|
+\end{equation*}
+note que o delimitador n\~{a}o est\'{a} englobando completamente a fraç\~{a}o. Para corrigir este problema, basta usar os comandos \verb|\left| e \verb|\right| para obter,
+\begin{equation*}
+    f(x) = \left(\frac{1}{2}\right)^x \qquad \verb |f(x) = \left(\frac{1}{2}\right)^x|
+\end{equation*}
+por fim, apresentaremos outro exemplo,
+\begin{equation*}
+    \left[ \sum_{i} a_{i} \right]^{1/p} \verb |\left[ \sum_{i} a_{i} \right]^{1/p}|
+\end{equation*}
+
+\noindent observe que \verb|\left| e \verb|\right| foram os respons\'{a}veis por "esticar"$ $ o delimitador por uma certa quantidade que \'{e} vari\'{a}vel, ou seja, depende de qual express\~{a}o o delimitador precisa abranger. Devido a isso, existem outros comandos que possuem a mesma funç\~{a}o mas que "esticam"$ $ por uma quantidade fixa,
+\begin{equation*}
+    | \quad \big | \quad \Big | \quad \bigg | \quad \Bigg |  
+\end{equation*}
+\begin{verbatim}
+  | \quad \big | \quad \Big | \quad \bigg | \quad \Bigg |
+\end{verbatim}
+
+\noindent geralmente, s\~{a}o usados caso os delimitadores esticados por \verb|\left| e \verb|\right| ou s\~{a}o muito longos ou muito curtos como \'{e} o caso do exemplo anterior, assim:
+\begin{equation*}
+    \left[ \sum_{i} a_{i} \right]^{1/p} \quad \bigg[ \sum_{i} a_{i} \bigg]^{1/p}
+\end{equation*}
+
+\begin{programcode}{Comparação}
+\begin{verbatim}
+        \left[\sum_{i} a_{i}\right]^{1/p} \quad
+            \bigg[\sum_{i} a_{i}\bigg]^{1/p}
+\end{verbatim}    
+\end{programcode}
+
+\noindent como podemos ver o resultado da direita certamente \'{e} melhor.
+\subsection{Operadores e novos s\'{i}mbolos}
+Quando tentamos escrever no \LaTeX$ $ o comando correspondente a $\sin x$, \'{e} poss\'{i}vel pensar em \verb|sin x| como sendo uma resposta plaus\'{i}vel, entretanto o que obteremos ser\'{a} $sin x$, para evitar esta situa\c c\~{a}o escrevemos \verb|\sin x|.
+
+\noindent Al\'{e}m disso, dentre os operadores, um dos quais provavelmente ser\'{a} muito utilizado ser\'{a} o \verb|\lim|, pois com ele podemos escrever express\~{o}es como esta,
+\begin{equation*}
+    \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}, \quad \verb|\lim_{h \to 0} \frac{f(x+h) - f(x)}{h},|
+\end{equation*}
+no estilo \textit{inline} ter\'{i}amos $\lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$. Obeserve que $h \to 0$ estava debaixo de $\lim$ no primeiro exemplo, mas agora est\'{a} subescrito, podemos for\c car esta subscri\c c\~{a}o no estilo \textit{displayed} usando o comando \verb|\nolimits|,
+\begin{equation*}
+    \lim\nolimits_{h \to 0} \frac{f(x+h) - f(x)}{h},
+\end{equation*}
+com o comando \verb|\lim\nolimits_{h \to 0} \frac{f(x+h) - f(x)}{h}|.
+
+\noindent Novos operadores matem\'{a}ticos podem ser criados no pr\'{e} \^{a}mbulo, a partir do comando \verb|\DeclareMathOperator| assim, se fizermos \verb|\DeclareMathOperator| \verb|{\mat}{Matema}| e no corpo do texto invocarmos o novo operador com  \verb|\mat A| obteremos $\mat A$. Caso o comando \verb|\mat| j\'{a} existisse uma mensagem de erro seria exibida.
+
+\noindent O comando \verb|\substack| prov\^{e} limites multilineares para operadores grandes, por exemplo:
+\begin{equation*}
+    \sum_{ \substack{ i < n\\ i \text{ par}}} x_{i}^{2} \quad \verb|$\sum_{ \substack{ i < n\\ i \text{ par}}} x_{i}^{2}$|    
+\end{equation*}
+
+\noindent com \verb|\sideset| \'{e} poss\'{i}vel escrever,
+\begin{equation*}
+    \sideset{_\alpha^\beta}{_\gamma^\delta}\prod_{\pi}^{\xi} \; \verb|\sideset{_\alpha^\beta}{_\gamma^\delta}\prod_{\pi}^{\xi}|
+\end{equation*}
+
+\noindent e consequentemente, escrever express\~{o}es como a seguir,
+\begin{equation*}
+    \sideset{}{'}\sum_{ \substack{n<k\\ n \text{ \'{i}mpar}}} nE_{n}
+\end{equation*}
+\begin{verbatim}
+\sideset{}{'}\sum_{\substack{n<k\\n\text{\'{i}mpar}}} nE_{n}
+\end{verbatim}
+\noindent Al\'{e}m disso, temos \verb|\overset| e \verb|\underset| que s\~{a}o capazes de criar novos s\'{i}mbolos,
+\begin{equation*}
+    \underset{\max}{X} \overset{\text{ def }}{=} \max X \quad \verb|\underset{\max}{X}\overset{\text{ def }}{=}\max X|
+\end{equation*}
+
+\subsection{Chaves e linhas horizontais}
+O comando \verb|\overbrace| permite a seguinte constru\c c\~{a}o,
+\begin{equation*}
+    \overbrace{x^2+2x+1} - y^{2} = (x+1)^{2} - y^{2}
+\end{equation*}
+\begin{verbatim}
+    \overbrace{x^2+2x+1} - y^{2} = (x+1)^{2} - y^{2}
+\end{verbatim}
+
+\noindent mas talvez o fato mais interessante seja o fato de que podemos escrever textos matem\'{a}ticos acima desta chave horizontal,
+\begin{equation*}
+    \overbrace{a_{1}+\dots +a_{n}}^{\sum\limits_{i=1}^{n}} + \sum\limits_{i=n+1}^{2n} a_{i} = \sum\limits_{i=1}^{2n} a_{i}
+\end{equation*}
+
+\begin{programcode}{\textit{Overbrace} com marcador.}
+\begin{verbatim}
+\overbrace{a_{1}+\dots +a_{n}}^{\sum\limits_{i=1}^{n}} + \sum
+\limits_{i = n+1}^{2n} a_{i} = \sum\limits_{i=1}^{2n} a_{i}
+\end{verbatim}
+\end{programcode}
+
+\noindent para a chave horizontal est\'{a} debaixo de uma express\~{a}o matem\'{a}tica basta usar o comando \verb|\underbrace|,
+\begin{equation*}
+    \underbrace{a+\dots+a}_{n \text{ parcelas}} = na \quad \verb|\underbrace{a+\dots+a}_{n \text{ parcelas}}|
+\end{equation*}
+temos ainda \verb|\underline| e \verb|\overline| para criar linhas horizontais,
+\begin{equation*}
+    \overline{\overline{X}} = \underline{X} \quad \verb|\overline{\overline{X}} = \underline{X}|
+\end{equation*}
+
+\subsection{F\'ormulas emolduradas}
+Com o comando \verb|\boxed| \'{e} poss\'{i}vel escrever f\'{o}rmulas emolduradas da seguinte forma,
+\begin{equation*}
+    \boxed{ \sin (a\pm b) = \sin a\cos b \pm \sin b\cos a}
+\end{equation*}
+\begin{verbatim}
+    \boxed{ \sin (a\pm b) = \sin a\cos b \pm \sin b\cos a}
+\end{verbatim}
+
+\subsection{Fun\c c\~{a}o definida por partes}
+Para escrever uma fun\c c\~{a}o definida por partes no \LaTeX$ $ \'{e} preciso usar o ambiente \verb|cases|,
+\begin{equation*}
+    |x| = \begin{cases}
+      x,&\text{ se } x\ge 0\\
+      -x,&\text{ se } x< 0
+    \end{cases}
+\end{equation*}
+da seguinte forma,
+
+\begin{programcode}{Função modular}
+\begin{verbatim}
+    \begin{equation*}
+        |x| = 
+        \begin{cases}
+          x,&\text{ se } x\ge 0\\
+          -x,&\text{ se } x< 0
+        \end{cases}
+    \end{equation*}
+\end{verbatim}
+\end{programcode}
+
+
+
+\noindent observe que o s\'{i}mbolo \verb|&| \'{e} o respons\'{a}vel por alinhar o texto gerado pelo comandos \verb|\text{ se } x\ge 0| e \verb|\text{ se } x< 0|, al\'{e}m disso \verb|\\| indica a quebra de linha. 
+\newpage
+\subsection{F\'{o}rmulas muito longas}
+Podemos escrever f\'{o}rmulas muito longas com o ambiente \verb|multline|,
+\begin{multline*}
+    (x-y+z)^{5} = x^{5} - 5x^{4}y + 5x^{4}z + 10x^{3}y^{2} - 20x^{3}yz + 10x^{3}z^{2} - 10x^{2}y^{3}\\
+    + 30x^{2}y^{2}z - 30x^{2}yz^{2} + 10x^{2}z^{3} + 5xy^{4} - 20xy^{3}z + 30xy^{2}z^{2}\\
+    - 20xyz^{3} + 5xz^{4} - y^{5} + 5y^{4}z - 10y^{3}z^{2} + 10y^{2}z^{3} - 5yz^{4} + z^{5}
+\end{multline*}
+
+\begin{programcode}{Comando multiline.}
+\begin{verbatim}
+\begin{multline*}
+    (x-y+z)^{5} = x^{5} - 5x^{4}y + 5x^{4}z + 10x^{3}y^{2} 
+    - 20x^{3}yz + 10x^{3}z^{2} - 10x^{2}y^{3}\\
+    + 30x^{2}y^{2}z - 30x^{2}yz^{2} + 10x^{2}z^{3} + 5xy^{4} 
+    - 20xy^{3}z + 30xy^{2}z^{2}\\
+    - 20xyz^{3} + 5xz^{4} - y^{5} + 5y^{4}z - 10y^{3}z^{2} 0
+    + 10y^{2}z^{3} - 5yz^{4} + z^{5}
+\end{multline*}
+\end{verbatim}
+\end{programcode}
+
+\noindent este comando faz com que o trecho da equa\c c\~{a}o que est\'{a} na primeira linha esteja alinhado \`{a} esquerda, centralizado para todas as linhas a seguir, exceto pela \'{u}ltima que ficar\'{a} alinhada a direita.
+
+\subsection{Matrizes}
+As matrizes podem ser escritas com o ambiente \verb|pmatrix|,
+\begin{equation*}
+    A = 
+    \begin{pmatrix}
+        -1 & 1\\
+        2 & 377
+    \end{pmatrix}     
+\end{equation*}
+
+\begin{programcode}{Criação de uma matriz.}
+\begin{verbatim}
+\begin{equation*}
+    A = 
+    \begin{pmatrix}
+        -1 & 1\\
+        2 & 377
+    \end{pmatrix}     
+\end{equation*}
+\end{verbatim}
+\end{programcode}
+
+\noindent cabe salientar que o ambiente \verb|matriz| entrega o mesmo resultado do que \verb|pmatrix| mas sem nenhum delimitador, al\'{e}m disso \verb|vmatrix| e \verb|vmatrix| possuem os caracteres | | e [ ] como delimitadores, respectivamente, como \'{e} mostrado abaixo
+\begin{align*}
+    \begin{matrix}
+        -1 & 1\\
+        2 & 377
+    \end{matrix}
+    \qquad
+    \begin{vmatrix}
+        -1 & 1\\
+        2 & 377
+    \end{vmatrix}
+    \qquad
+    \begin{bmatrix}
+        -1 & 1\\
+        2 & 377
+    \end{bmatrix}
+\end{align*}
+
+\noindent podemos alinhar os n\'{u}meros da primeira coluna dessa matriz com o comando \verb|\phantom| respons\'{a}vel por inserir espa\c cos vazios na horizontal,
+
+\begin{equation*}
+    A = 
+    \begin{pmatrix}
+        -1 & 1\\
+        \phantom{-}2 & 377
+    \end{pmatrix}     
+\end{equation*}
+
+\begin{programcode}{Comando \emph{phantom}.}
+\begin{verbatim}
+    \begin{equation*}
+        A = 
+        \begin{pmatrix}
+            -1 & 1\\
+            \phantom{-}2 & 377
+        \end{pmatrix}     
+    \end{equation*}
+\end{verbatim}
+\end{programcode}
+
+\noindent temos ainda o \verb|\vphantom| respons\'{a}vel por inserir espa\c cos vazios na vertical,
+\begin{equation*} 
+    \begin{matrix}
+        \overline{a} & \overline{b}\\
+        1 & 2
+    \end{matrix}  
+    \qquad
+    \begin{matrix}
+        \overline{\vphantom{B}a} & \overline{b}\\
+        1 & 2
+    \end{matrix}    
+\end{equation*} 
+
+\begin{programcode}{Comando \emph{vphantom}.}
+\begin{verbatim}
+\begin{equation*} 
+    \begin{matrix}
+        \overline{a} & \overline{b}\\
+        1 & 2
+    \end{matrix}  
+    \qquad
+    \begin{matrix}
+        \overline{\vphantom{B}a} & \overline{b}\\
+        1 & 2
+    \end{matrix}    
+\end{equation*}
+\end{verbatim}
+\end{programcode}
+
+\newpage
+\noindent por fim, como prometido, usaremos os comandos \verb|\hdots|, \verb|\vdots| e \verb|\ddots| para nos ajudar a construir uma matriz,
+
+\begin{equation*}
+    \begin{pmatrix}
+        a_{11} & a_{12} & a_{13} & \hdots & a_{1n}\\
+        a_{21} & a_{22} & a_{23} & \hdots & a_{2n}\\
+        a_{31} & a_{32} & a_{33} & \hdots & a_{3n}\\
+        \vdots & \vdots & \vdots & \ddots & \vdots\\
+        a_{m1} & a_{m2} & a_{m3} & \hdots & a_{mn}
+    \end{pmatrix}
+\end{equation*}
+
+\begin{programcode}{Matriz genérica.}
+\vspace{-0.5 cm}
+\begin{verbatim}
+\begin{equation*}
+    \begin{pmatrix}
+        a_{11} & a_{12} & a_{13} & \hdots & a_{1n}\\
+        a_{21} & a_{22} & a_{23} & \hdots & a_{2n}\\
+        a_{31} & a_{32} & a_{33} & \hdots & a_{3n}\\
+        \vdots & \vdots & \vdots & \ddots & \vdots\\
+        a_{m1} & a_{m2} & a_{m3} & \hdots & a_{mn}
+    \end{pmatrix}
+\end{equation*}
+\end{verbatim}
+\end{programcode}
+
+\subsection{Sistemas lineares}
+Um sistema linear pode ser facilmente constru\'{i}do com o comando \verb|\cases|
+\begin{equation*}
+    \begin{cases}
+        \phantom{-1}3\alpha + \phantom{1}2\beta - \phantom{1}5 \gamma = 6\\
+        \phantom{-1}7\alpha - 11\beta + 13 \gamma = 5\\
+        -17\alpha + 19\beta - 23 \gamma = 4
+    \end{cases}
+\end{equation*}
+
+
+\begin{programcode}{Sistema Linear em \LaTeX.}
+\begin{verbatim}
+\begin{equation*}
+    \begin{cases}
+        \phantom{-1}3\alpha + \phantom{1}2 \beta 
+        - \phantom{1}5 \gamma = 6\\
+        \phantom{-1}7\alpha - 11\beta + 13 \gamma = 5\\
+        -17\alpha + 19\beta - 23 \gamma = 4
+    \end{cases}
+\end{equation*}
+\end{verbatim}
+\end{programcode}
+
+\newpage
+
+\subsection{Exerc\'{i}cios}
+
+\begin{prob}
+\label{prob1}
+\begin{equation*}
+    A = B \Leftrightarrow (A \subset B) \wedge (B \subset A)
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob2}
+\begin{equation*}
+    \overline{A \cup B} = \overline{A} \cap \overline{B}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob3}
+\begin{equation*}
+    \boxed{x = \frac{-b\pm\sqrt{b^{2}-4ac}}{2a}}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob4}
+\begin{equation*}
+    a_n = \begin{cases}
+                a_1 = a & a\in\mathbb{R}\\
+                a_n = a_{n-1} + r & r\in\mathbb{R},\forall n \ge 2
+               \end{cases}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob5}
+\begin{equation*}
+    \sum\limits_{k=1}^{n}\binom{n}{k} = 2^{n}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob6}
+Equação retirada em \cite{Elon}:
+\begin{equation*}
+    \lim a_{n} = L := \forall\;\epsilon > 0,\exists\;n_{0}\in\mathbb{N};\;n>n_{0}\Rightarrow|a_{n}-L|<\epsilon
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob7}
+Equação retirada em \cite{Elon}:
+\begin{equation*}
+    \lim\limits_{x\to a} f(x) = L := \forall\;\epsilon > 0,\exists\;\delta>0;\;0<|x-a|<\delta\Rightarrow|f(x)-L|<\epsilon
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob8}
+Equação retirada em \cite{gratzer2007more}:
+\begin{equation*}
+    \sum\limits_{i=1}^{\left\lfloor \frac{n}{2} \right\rfloor} \binom{x_{i,i+1}^{i^{2}}}{\left\lceil \dfrac{i+3}{3} \right\rceil}\frac{\sqrt{\mu (i)^{\frac{3}{2}}(i^{2}-1)}}{\sqrt[3]{\rho (i)-2}+\sqrt[3]{\rho (i)-1}}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob9}
+Equação retirada em \cite{gratzer2007more}:
+\begin{equation*}
+    \det \mathbf{K}(t = 1, t_1,\dots,t_n) = \sum\limits_{I\in\mathbf{n}}(-1)^{|I|}\prod\limits_{i\in I} t_{i}\prod\limits_{j\in I} (D_{j} + \lambda_{j}t_{j}) \det \mathbf{A}^{\lambda}(\overline{I} | \overline{I}) = 0
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob10}
+Equação retirada em \cite{gratzer2007more}:
+\begin{equation*}
+    \int_{\mathcal{D}} |\overline{\partial u}|^{2} \Phi_{0}(z) e^{\alpha |z|^{2}} \ge \int_{\mathcal{D}} |u|^2 \Phi_{0}e^{\alpha |z|^{2}} + c_{5}\delta^{-2} \int_{\mathcal{A}} |u|^2 \Phi_{0}e^{\alpha |z|^{2}}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob11}
+Equação retirada em \cite{gratzer2007more}:
+\begin{equation*}
+    \Theta_{i} = \bigcup \big( \Theta (\overline{a \wedge b}, \overline{\vphantom{b}a}\wedge \overline{b} \mid a,\ b \in B_{i} \big) \vee \bigcup \big( \Theta (\overline{a \vee b}, \overline{\vphantom{b}a}\vee \overline{b} \mid a,\ b \in B_{i} \big)
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob12}
+Equação retirada em \cite{Tiago}:
+\begin{equation*}
+     -\frac{\hbar^{2}}{2 m}\frac{\partial^{2}\Psi(x,t)}{\partial x^2} + V(x,t)\Psi(x,t)=i\hbar\frac{\partial\Psi(x,t)}{\partial t}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob13}
+Equação retirada em \cite{Balino}:
+\begin{equation*}
+     \frac{D\mathbf{V}}{Dt} = \frac{\partial \mathbf{V}}{\partial t} + \nabla \mathbf{V}\cdot \mathbf{V} = -\frac{1}{\rho}\nabla p + \mathbf{G} + \nu\nabla^{2}\mathbf{V} + \frac{1}{3}\nu\nabla (\nabla\cdot\mathbf{V})
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob14}
+\begin{equation*}
+     \begin{vmatrix}
+                a_{11} & a_{12} \\
+                a_{21} & a_{22}
+            \end{vmatrix}
+            = a_{11}a_{22} - a_{12}a_{21}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob15}
+Equação retirada em \cite{stewart2013calculo}:
+\begin{equation*}
+      S = \int\limits_{\alpha}^{\beta} 2\pi y\sqrt{\left(\dfrac{dx}{dt}\right)^{2} + \left(\dfrac{dy}{dt}\right)^{2}} \, dt
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob16}
+Equação retirada em \cite{stewart2013calculo}:
+\begin{equation*}
+      f(x) = \sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^{n}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+\label{prob17}
+\begin{equation*}
+      \begin{cases}
+                3x+7y+4z = 1\\
+                2x+8y+6z = 2 \\
+                5x+9y+\phantom{1}z=3
+            \end{cases}
+            \Rightarrow
+            \begin{bmatrix}
+                7 & 7 & 4\\
+                2 & 8 & 6\\
+                5 & 9 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+                x \\
+                y \\
+                z
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                1 \\
+                2 \\
+                3
+            \end{bmatrix}
+\end{equation*}
+\end{prob}

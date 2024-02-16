@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Introdu\c c\~ao}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+\abstract*{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.
+Please use the 'starred' version of the new \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+
+Neste material, exploraremos o sistema TeX, com foco especial no editor de texto \LaTeX. Descobriremos como essa ferramenta pode ser utilizada para criar e formatar uma ampla variedade de documentos, abrangendo desde simples artigos até monografias, apresentações em estilo \emph{beamer} e pôsteres informativos. Ao longo deste guia, iremos explorar as ferramentas essenciais que o \LaTeX{} oferece, permitindo produzir documentos profissionais.
+
+\section{O que \'e o LaTeX?}
+\label{sec:1}
+
+O \TeX\ é uma not\'avel linguagem de marcação, concebida e apresentada por Donald Knuth em 1978. Essa linguagem trouxe consigo um novo padrão de qualidade tipográfica, porém, logo após seu lançamento, surgiu uma demanda por uma abordagem mais simplificada e acessível. Isso se deve ao fato de que, apesar das melhorias na tipografia, o \TeX\ apresentava uma curva de aprendizado acentuada e necessitava de conhecimento em programação, o que restringia sua adoção a um público mais especializado.
+
+\noindent Esse cenário deu origem ao \LaTeX, uma evolução do \TeX\ desenvolvida por Leslie Lamport na década de 1980. O \LaTeX\ foi projetado para facilitar a produção de documentos de alta qualidade, em que os autores poderiam focar no conteúdo em vez de se preocupar com os detalhes de formatação. Com comandos mais intuitivos e uma estrutura de documento modular, o \LaTeX\ rapidamente se tornou uma ferramenta fundamental para a comunidade acadêmica e científica, onde a apresentação precisa de fórmulas matemáticas e citações bibliográficas era essencial.
+
+\noindent O desenvolvimento posterior do \LaTeX\ representou uma resposta à necessidade de tornar a composição de documentos tipográficos mais acessível e eficaz, desempenhando um papel significativo na evolução da produção textual, especialmente na esfera acadêmica e científica.
+
+
+\section{Vantagens de usar o LaTeX}
+\noindent O \LaTeX \ oferece diversas vantagens que o tornam uma escolha assertiva para a cria\c c\~ao de documentos. Neste contexto, uma de suas principais vantagens \'e a versatilidade, adequada para a cria\c c\~ao de diversos tipos de documentos. Al\'em disso, o \LaTeX \ \'e amplamente reconhecido por sua capacidade de lidar com as nota\c c\~oes matem\'aticas de maneira pr\'atica e eficiente, em que \'e poss\'ivel escrever equa\c c\~oes complexas e s\'imbolos matem\'aticos com facilidade. Ademais, ao contr\'ario de muitos editores de texto que possuem m\'ultiplas barras de ferramentas, o \LaTeX \ oferece uma abordagem mais simplificada, em que \'e possível editar todo o texto em uma \'unica aba.
+\section{Instalação}
+\label{sec:2}
+
+\noindent A instala\c c\~ao do \LaTeX\ \'e dividida em duas partes, pois envolve a configura\c c\~ao de dois componentes essenciais: o compilador e o editor. 
+
+\noindent Ao escrever um texto em \LaTeX\, estamos essencialmente criando um c\'odigo-fonte que descreve a estrutura e o conte\'udo do documento. Esse c\'odigo-fonte cont\'em comandos que instruem o \LaTeX\ sobre como formatar o texto. Para isso, \'e necess\'ario compilar o texto, ou seja, o \LaTeX\ l\^e o c\'odigo-fonte, interpreta os comandos e gera um arquivo de sa\'ida.
+
+\noindent O editor \'e o respons\'avel por oferecer uma s\'erie de recursos que simplificam a cria\c c\~ao e a formata\c c\~ao de documentos, como preenchimento autom\'atico de comandos, ajuda na identifica\c c\~ao de erros no c\'odigo e atalhos para a compila\c c\~ao instant\^anea. Al\'em disso, os editores frequentemente organizam a visualiza\c c\~ao do documento, permitindo a vis\~ao da \'area de edi\c c\~ao e do documento final lado a lado, facilitando a identifica\c c\~ao de poss\'iveis ajustes.
+
+\subsection{Instala\c c\~ao do MiKTeX no Windows}
+
+\noindent O MiKTeX \'e o respons\'avel por compilar as entradas em \TeX\ no Windows e gerar o documento j\'a formatado. Para ainstalação, acesse o site oficial do MiKTeX 
+\begin{center}
+\url{https://miktex.org/download}
+\end{center}
+
+\noindent e escolha o sistema operacional correspondente ao seu dispositivo. Com isso, basta clicar em "Download" \ e, em seguida, executar o arquivo de instal\c c\~ao j\'a baixado.
+\noindent Ap\'os isso clique em "Avan\c car" \ no termo com as condições para o uso e  selecione "Complete MiKTeX” para baixar a versão completa. o MixTeX será baixado para o local selecionado anteriormente.
+\subsection{Intala\c c\~ao do MiKTeX no Linux}
+\noindent \'E importante observar que o MikTeX n\~ao possui uma vers\~ao nativa para sistemas LinuX. Em virtude disso, recomendamos o tutorial disposto no site oficial do MiKTeX
+\begin{center}
+\url{https://miktex.org/download}
+\end{center}
+em que ser\'a poss\'ivel encontrar informa\c c\~oes espec\'ificas para usu\'arios do LinuX, incluindo instru\c c\~oes passo a passo sobre como configurar e ultilizar o MiKTeX neste sistema.
+\subsection{Instala\c c\~ao do MacTeX no Macbook}
+\noindent Acesse o site oficial do MacTeX:
+\begin{center}
+\url{https://tug.org/mactex/mactex-download.html}.   
+\end{center}
+Baixe o arquivo de instala\c c\~ao \textit{MacTeX.pkg} e em seguida, execute-o. Ap\'os isso, o assistente de instalação do MacTeX será aberto. Siga as instruções na tela para concluir a instalação. Elas incluirão a aceitação do contrato de licença e a escolha do diretório de instalação. Vale ressaltar que o usu\'ario deve verificar a vers\~ao do seu Macbook para baixar a vers\~ao do MacTeX correspondente.
+
+\section{Editores LaTeX}
+\label{sec:3}
+\subsection{TeXWorks}
+\noindent Acesse o site oficial do TeXWorks 
+\begin{center}
+\url{https://www.tug.org/texworks/}    
+\end{center}
+\noindent  e baixe a vers\~ao apropriada para o seu sistema operacional (Windows, Mac ou Linux). Apo\'os isso, execute o arquivo e siga as instru\c c\~oes para concluir a instala\c c\~ao padr\~ao.
+
+\subsection{TexStudio}
+Acesse o site oficial do TeXStudio
+\begin{center}
+\url{https://www.texstudio.org/}   
+\end{center}
+e baixe a vers\~ao apropriada para o seu sistema operacional (Windows, Mac ou Linux). Ap\'os isso, execute o arquivo e siga as instru\c c\~oes para concluir a instala\c c\~ao padr\~ao.
+\subsection{Overleaf}
+O Overleaf é uma plataforma online para escrita em LaTeX que não requer instala\c c\~ao local. Basta criar uma conta no site do Overleaf 
+\begin{center}
+    \url{https://www.overleaf.com/project}
+\end{center}
+e começar a escrever imediatamente, pois ele entende a linguagem \LaTeX e formata o texto automaticamente, sendo possível exportá-lo para um arquivo em PDF ou outros formatos para imprimir ou compartilhar.
+\section{T\'opicos b\'asicos do LaTeX}
+\label{sec:4}
+O \LaTeX\ oferece uma maneira estruturada de criar documentos. Atrav\'es dos comandos e ambientes, podemos definir a formata\c c\~ao, a organiza\c c\~ao e os elementos do nosso documento de forma precisa e eficaz.
+
+\subsection{Pre\^ambulo}
+\label{sec:5}
+No \LaTeX, o pre\^ambulo representa as configura\c c\~oes iniciais do c\'odigo onde s\~ao definidas diretrizes globais, formata\c c\~ao e informa\c c\~oes cruciais que permeiam todo o documento a ser criado. Ele \'e o respons\'avel por dar forma, estilo e personalidade \`a cria\c c\~ao textual. Nele, não deve ser escrito o conte\'udo principal do texto, mas devem ser declaradas as regras que v\~ao orientar a apresenta\c c\~ao, como a escolha do tipo de documento ou os pacotes a serem utilizados, que abordaremos posteriormente. No pre\^ambulo, deve ser definido o tipo de documento que está sendo criado, como um artigo, um relatório ou um livro.  Isso pode ser feito com o comando \texttt{\textbackslash documentclass\{\}}.
+
+\subsection{Elementos iniciais do texto}
+No \LaTeX, um documento \'e organizado por meio de comandos espec\'ificos. Para inciar o texto, deve ser utilizado o comando \texttt{\textbackslash begin\{document\}} e para finalizar, o comando \texttt{\textbackslash end\{document\}}. Tudo entre esses comandos será processado e exibido no documento.
+
+\noindent A barra invertida (\texttt{\textbackslash}) \'e usada para indicar comandos no \LaTeX. No preâmbulo, o comando \texttt{\textbackslash title\{\}} \'e utilizado para definir o t\'itulo do documento, j\'a o comando \texttt{\textbackslash author\{\}} define o nome do autor e \texttt{\textbackslash date\{\}} define a data. Essas informações serão usadas posteriormente para criar o cabe\c calho do texto.
+
+\noindent Outro fator importante \'e o s\'imbolo \verb|%|, usado para indicar coment\'arios ao longo da escrita. Quando usado, qualquer texto seguido de \verb|%| em uma linha n\~ao ser\'a processado pelo compilador, e portanto, n\~ao aparecer\'a no documento final.
+
+
+\section{Pacotes e Extens\~oes}
+\label{sec:6}
+ Os Pacotes e extensões no \LaTeX\ são conjuntos de comandos e funcionalidades pr\'e-definidos que permitem a inclus\~ao de recursos adicionais ao seu documento. Eles abrangem desde a manipula\c c\~ao de imagens, tabelas, equa\c c\~oes matem\'aticas complexas at\'e a inser\c c\~ao de c\'odigos-fonte e algoritmos. Essas extens\~oes s\~ao criadas por membros da comunidade \LaTeX\ para facilitar tarefas espec\'ificas e adicionar recursos especializados. Atrav\'es da incorpora\c c\~ao de pacotes e extens\~oes, pode-se adicionar funcionalidades avan\c cadas, formatar elementos espec\'ificos e aprimorar significativamente a qualidade e a est\'etica do trabalho. 
+
+\section{Ambientes}
+\label{sec:7}
+\noindent Um ambiente \'e uma estrutura delimitada que define a maneira que o conte\'udo deve ser formatado e exibido. O \LaTeX\ oferece uma variedade de ambientes que permite formatar diferentes partes do documento de maneira espec\'ifica. Esses ambientes fornecem estruturas de textos, listas, equa\c c\~oes e outros elementos. O s\'imbolo \verb|$|, por exemplo, desempenha um papel fundamental na marca\c c\~ao do \textit{ambiente matemático}. Quando envolvemos uma express\~ao ou equa\c c\~ao entre \verb|$$|, o \LaTeX\ reconhece que o conte\'udo deve ser interpretado como c\'odigo matem\'atico. Ao longo deste material, ser\~ao abordados outros ambientes. Abaixo, seguem exemplos de ambientes que n\~ao necessitam de outros comandos e pacotes no pre\^ambulo. 
+% \begin{trailer}{Teorema}
+% Ambiente utilizado para enunciar teoremas.
+% \begin{verbatim}\begin{theorem}
+% ...
+% \end{theorem}\end{verbatim}
+
+% \end{trailer}
+% \begin{trailer}{Lema}
+% Ambiente utilizado para enunciar Lemas.
+% \begin{verbatim}\begin{lemma}
+% ...
+% \end{lemma}\end{verbatim}
+% \end{trailer}
+% \begin{trailer}{Defini\c c\~oes}
+% Ambiente utilizado para enunciar defini\c c\~oes.
+% \begin{verbatim}\begin{definition}
+% ...
+% \end{definition}\end{verbatim}
+
+% \end{trailer}
+% \begin{trailer}{Equa\c c\~oes}
+% Ambiente utilizado para criar equa\c c\~oes.
+% \begin{verbatim}\begin{equation}
+% ...
+% \end{equation}\end{verbatim}
+% Ambiente utilizado para alinhar equa\c c\~oes verticalmente.
+% \begin{verbatim}\begin{aling}
+% ...
+% \end{aling}\end{verbatim}
+
+% \end{trailer}
+\begin{trailer}{Listas n\~ao numeradas}
+\begin{verbatim}
+\begin{itemize}
+...
+\end{itemize}
+\end{verbatim}
+\end{trailer}
+
+\begin{trailer}{Listas numeradas}
+\begin{verbatim}
+\begin{enumerate}
+    \item{}
+...
+\end{enumerate}
+\end{verbatim}
+\end{trailer}
+
+\noindent Neste exemplos, o comando utilizado para adicionar os itens da lista \'e definido por \texttt{\textbackslash item\{\}}.
+% \begin{trailer}{Cita\c c\~oes}
+% Ambiente utilizado para citar textos longos, onde a cita\c c\~ao \'e recuada em rela\c c\~ao ao restante do texto.
+% \begin{verbatim}\begin{quote}
+% ...
+% \end{quote}\end{verbatim}
+
+% \end{trailer}

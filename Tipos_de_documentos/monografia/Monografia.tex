@@ -1,0 +1,65 @@
+\documentclass[12pt, oneside, a4paper, chapter=TITLE, section=TITLE,]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{transparent}
+\usepackage{eso-pic}  % Para adicionar a marca d'água
+\usepackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\onehalfspacing
+\usepackage{appendix}
+
+ 
+
+% \AddToShipoutPicture{
+% \put(0,0){
+% \parbox[b][\paperheight]{\paperwidth}{%
+% \vfill
+% \centering
+% {\transparent{0.05}\includegraphics[width=1\textwidth]{Figuras/marcadagua.png}}%
+% \vfill}}}
+
+\begin{document}
+
+\include{Capa}
+
+\include{Folhaderosto}
+
+\include{FolhaAprovação}
+
+\include{FolhaExtra}
+
+\include{Agradecimentos}
+
+\include{Resumo}
+
+\include{Abstract}
+
+\listoffigures
+\listoftables
+
+\setcounter{tocdepth}{3} % Define a profundidade do sumário
+\tableofcontents
+
+\include{Introdução}
+
+\include{Capítulos/Cap1}
+\include{Capítulos/Cap2}
+\include{Capítulos/Cap3}
+
+\bibliographystyle{abbrv}
+\bibliography{refs}
+\addcontentsline{toc}{chapter}{REFERÊNCIAS}
+
+\clearpage 
+
+\addcontentsline{toc}{chapter}{Apêndice}
+\appendix
+
+\addcontentsline{toc}{chapter}{Anexos}
+
+\chapter{Anexos}
+
+\end{document}
+

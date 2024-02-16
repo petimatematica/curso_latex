@@ -1,1 +1,1 @@
-# curso_latex teste branch update 1.0
+Apostila do "Minicurso de Introdução à edição de textos usando LaTeX".

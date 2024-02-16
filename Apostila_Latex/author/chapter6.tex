@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Bibliografias e Cita\c c\~oes}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+Neste capítulo, exploraremos a elaboração de elementos importantes para documentos acadêmicos, incluindo a criação de sumários, índices remissivos e outros recursos relevantes. 
+
+\section{Construção de Sum\'ario}
+\label{sec:1}
+
+O \LaTeX{} é projetado para simplificar a criação de documentos estruturados, e isso inclui a geração automática de sumários. Cada vez que \'e criada uma seção, subseção, subsubseção e assim por diante, o \LaTeX{} rastreia essas estruturas para criar uma hierarquia organizada que será usada para gerar o sumário.
+
+\noindent Para criar um sumário, deve-se incluir o comando \verb|\tableofcontents| no local onde \'e desejado que o sumário apareça (normalmente ap\'os o \verb|\begin{document}|, o título e o resumo). Esse comando é responsável por gerar o sumário baseado nas seções e subseções do documento.
+
+\noindent Por padrão, o \LaTeX{} inclui todas as seções, subseções e subsubseções no sumário. Entretanto, é possível personalizar o nível de profundidade exibido no sumário usando o comando \verb|\setcounter{tocdepth}| seguido pelo valor apropriado. Os valores permitidos são de 0 a 3:
+\begin{itemize}
+    \item 0: Capítulos;
+    \item 1: Capítulos e seções;
+    \item 2: Capítulos, seções e subseções;
+    \item 3: Capítulos, seções, subseções e subsubseções.
+\end{itemize}
+Por exemplo, para incluir apenas capítulos e seções no sumário, \'e utilizado o seguinte comando:
+
+\begin{trailer}{Constru\c c\~ao de Sum\'ario}
+\begin{verbatim} 
+\begin{document}
+\setcounter{tocdepth}{1}
+\tableofcontents  % Gera o sumário
+\section{Introdução}
+Esta é a introdução do documento.
+\subsection{Objetivos}
+Nesta subseção, discutimos os objetivos.
+\subsubsection{Objetivos específicos}
+Nesta subsubseção, discutimos os objetivos específicos. 
+\end{document} \end{verbatim}
+\end{trailer}
+
+\noindent Para definir o sumário em português, pode-se usar o pacote \verb|babel|, que é um pacote de internacionalização que permite configurar diversos aspectos do documento, incluindo os títulos como "Sumário", "Capítulo", entre outros. Para isso, basta usar \verb|\usepackage[brazilian]{babel}| ou \verb|\usepackage[portuguese]{babel}|.
+
+% O sum\'ario pode ser feito atrav\'es de um \'unico comando que o gera automaticamente. Esse comando \'e o \verb|\tableofcontents|, que deve ser utilizado ap\'os o \verb|\begin{document}|, da seguinte forma: 
+
+% \begin{trailer}{Sum\'ario}
+% \begin{verbatim}\begin{document}
+% \tableofcontents
+% ....\end{verbatim}
+% \end{trailer}
+
+\section{Constru\c c\~ao de \'Indice Remissivo}
+\label{sec:2}
+
+No \LaTeX{}, o pacote \verb|makeidx| é usado para criar índices remissivos de forma automática. Para ativá-lo, deve-se incluir a seguinte linha no preâmbulo do documento:
+
+\begin{trailer}{Constru\c c\~ao de \'Indice Remissivo}
+\begin{verbatim} 
+\usepackage{imakeidx}
+\makeindex \end{verbatim}
+\end{trailer}
+
+\noindent O primeiro comando importa o pacote makeidx, enquanto o segundo comando, \verb|\imakeindex|, instrui o \LaTeX{} a criar o índice remissivo. Para marcar um termo ou palavra para inclusão no índice, basta usar o comando \verb|\index{termo}|, durante o texto que o termo se encontra. Por exemplo:
+
+\begin{trailer}{Inclusão de um termo no \'indice remissivo}
+\begin{verbatim} 
+O \index{LaTeX} é um sistema de formatação de documentos ...\end{verbatim}
+\end{trailer}
+
+\noindent Após marcar os termos relevantes com o comando \verb|\index|, é necessário compilar o documento com uma compilação adicional para que o índice seja gerado.
+
+\noindent Os termos marcados são coletados durante a compilação e organizados em ordem alfabética. Além disso, os números das páginas em que os termos aparecem são registrados. O índice é então inserido no documento no local onde foi colocado o comando \verb|\printindex|. Esta ferramenta é muito importante em textos acadêmicos, pois facilita a busca rápida de informações relevantes no documento.
+
+\section{Constru\c c\~ao de Lista de Figuras e Tabelas}
+\label{sec:3}
+
+No \LaTeX{}, é possível gerar automaticamente listas de figuras e tabelas no início do documento, o que torna a navegação do leitor mais fácil e organizada. Para fazer isso, pode-se usar os comandos \verb|\listoffigures| e \verb|\listoftables|. 
+
+\noindent Antes de tudo, deve-se usar o ambiente \verb|figure| para inserir figuras e o ambiente \verb|table| para inserir tabelas, como foi visto no capítulo anterior. Além disso, dentro desses ambientes, é importante utilizar o comando \verb|\caption{}| para adicionar uma legenda descritiva, pois ela aparecerá na lista criada.
+
+\noindent No início do documento, depois do \verb|\tableofcontents| (se houver um sumário), insira os comandos \verb|\listoffigures| e \verb|\listoftables|. Isso fará com que o \LaTeX{} gere automaticamente as listas de figuras e tabelas.
+
+\begin{trailer}{Construção de lista de figuras e de tabelas}
+\begin{verbatim} 
+\tableofcontents
+\listoffigures
+\listoftables \end{verbatim}
+\end{trailer}
+
+\noindent As legendas usadas com o comando \verb|\caption| serão automaticamente incluídas nas listas de figuras e tabelas. O \LaTeX{} coleta essas legendas e as exibe nas listas correspondentes no início do documento. As listas mostrarão os números das figuras e tabelas, seguidos pelos seus respectivos títulos.
+
+\section{Legendas e Referências cruzadas}
+\label{sec:4}
+
+O \LaTeX{} utiliza os ambientes \verb|figure| e \verb|table| para inserir figuras e tabelas, respectivamente. Esses ambientes são "flutuantes", o que significa que o \LaTeX{} decide onde posicioná-los da maneira mais esteticamente agradável, levando em consideração a formatação geral do documento. Dentro dos ambientes \verb|figure| e \verb|table|, o comando \verb|\caption| é usado para adicionar legendas descritivas às figuras e tabelas. Uma legenda deve ser clara e concisa, descrevendo o conteúdo de maneira informativa. 
+
+\noindent O comando \verb|\label| é usado para criar rótulos para figuras e tabelas. Esses rótulos são únicos e permitem criar referências cruzadas para esses elementos em diferentes partes do documento. Veja um exemplo abaixo:
+
+\begin{trailer}{Como rotular uma figura}
+\begin{verbatim} 
+\begin{figure}[opção]
+\includegraphics[opção]{nome.jpg}
+\caption{Legenda}
+\label{Rótulo}
+\end{figure}
+\end{verbatim}
+\end{trailer}
+
+\noindent Para fazer referência a uma figura ou tabela em outras partes do documento, pode-se usar o comando \verb|\ref|. O \LaTeX{} substituirá automaticamente o número da figura ou tabela correspondente no local da referência. Por exemplo:
+
+\begin{trailer}{Referência cruzada com figura}
+\begin{verbatim} 
+A Figura \ref{Rótulo} evidencia que...
+\end{verbatim}
+\end{trailer}
+
+\section{Sistemas de Gerenciamento de Referências}
+Os sistemas de gerenciamento de referências, como BibTeX e BibLaTeX, são ferramentas utilizadas para organizar e citar referências bibliográficas em documentos \LaTeX{}. Eles simplificam o processo de gerenciamento, formatação e inclusão de citações. 
+
+\noindent O BibTeX é um sistema tradicional que utiliza arquivos \verb|.bib| para armazenar informações bibliográficas. Cada entrada no arquivo \verb|.bib| descreve um item bibliográfico, como um livro, um artigo, entre outros. Essas entradas têm campos específicos, como autor, título, ano, editora, etc.
+
+\noindent O BibLaTeX é uma evolução do BibTeX, oferecendo capacidades mais avançadas de personalização. Ele é mais flexível na formatação de estilos de citação e é totalmente integrado ao \LaTeX{}. Ele permite estilos de citação altamente personalizados, tornando-o ideal para documentos que seguem diferentes convenções de estilo.
+
+\noindent Para criar um banco de dados bibliográfico no formato \verb|.bib|, pode-se criar um arquivo de texto simples com extensão \verb|.bib|. Cada entrada começa com um tipo (por exemplo, \verb|@book|, \verb|@article|, \verb|@inproceedings|) seguido por campos como \verb|author|, \verb|title|, \verb|year|, etc. Veja exemplos a seguir de entradas \verb|.bib|:
+
+\begin{trailer}{Exemplo de citação para livro}
+\begin{verbatim} 
+@book{exemploLivro,
+    author = {Autor},
+    title = {Título do livro},
+    year = {ano de publicação},
+    publisher = {Editora},
+} \end{verbatim}
+\end{trailer}
+
+\begin{trailer}{Exemplo de citação para artigo}
+\begin{verbatim} 
+@article{exemploArtigo,
+author = {Autor},
+title = {Título do artigo},
+year = {ano de publicação},
+publisher = {Editora}
+} \end{verbatim}
+\end{trailer}
+
+\noindent Para inserir a seção de referências utilizando essas ferramentas, basta usar o seguinte comando: 
+
+\begin{trailer}{Criação de Referências}
+\begin{verbatim} 
+\bibliography{Nome} %Nome do arquivo com extensão .bib
+\bibliographystyle{abbrv}
+\end{verbatim}
+\end{trailer}
+
+\noindent Vale ressaltar que o argumento abbrv utilizado no comando \verb|\bibliographystyle{}| é um estilo de referência, mas é possível utilizar outros estilos. No BibTeX, existem quatro estilos de bibliografia que são comumente utilizados, são eles: \verb|abbrv|, \verb|alpha|, \verb|unsrt| e \verb|plain|. O estilo \verb|abbrv| abrevia os nomes dos autores e títulos dos periódicos. O estilo \verb|alpha| organiza as referências em ordem alfabética. O estilo \verb|unsrt| lista as referências na ordem em que são citadas no texto, sem classificação por ordem alfabética. O estilo \verb|plain| lista as referências na ordem em que são citadas no texto e a entrada da bibliografia pode ser referenciada como [1] ou [ABC20], dependendo das configurações.
+
+\noindent Usando BibTeX ou BibLaTeX, as citações são incorporadas no texto por meio de comandos específicos. No caso do BibTeX, o comando \verb|\cite| é amplamente utilizado. Veja um exemplo abaixo de como inserir a citação no texto:
+
+\begin{trailer}{Citação no texto}
+\begin{verbatim} 
+Este resultado pode ser visto em \cite{exemploLivro}. \end{verbatim}
+\end{trailer}
+
+\noindent Para o BibLaTeX, existem comandos adicionais para maior flexibilidade:
+
+\begin{itemize}
+    \item \verb|\parencite{}|: Citação entre parênteses (muito utilizado);
+    \item \verb|\textcite{}|: Citação no formato autor-data;
+    \item \verb|\footcite{}|: Citação em nota de rodapé.
+\end{itemize}
+
+\enlargethispage{24pt}
